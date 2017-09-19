@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RingRace-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"game",
+		"player",
+		"dices"
+	],
+	"name" : "Turn",
+	"type" : "normal"
+}

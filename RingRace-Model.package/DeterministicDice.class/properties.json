@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Dice",
+	"category" : "RingRace-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"numbers",
+		"numberIndex"
+	],
+	"name" : "DeterministicDice",
+	"type" : "normal"
+}

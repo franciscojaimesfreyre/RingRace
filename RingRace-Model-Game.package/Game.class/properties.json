@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RingRace-Model-Game",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"players",
+		"board",
+		"playerLaps",
+		"numberOfLaps",
+		"winner",
+		"hasEnded",
+		"playerStates",
+		"dices",
+		"currentPlayerIndex"
+	],
+	"name" : "Game",
+	"type" : "normal"
+}

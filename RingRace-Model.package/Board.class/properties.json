@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RingRace-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"length",
+		"playerPositions",
+		"lastSquare",
+		"firstSquare"
+	],
+	"name" : "Board",
+	"type" : "normal"
+}
