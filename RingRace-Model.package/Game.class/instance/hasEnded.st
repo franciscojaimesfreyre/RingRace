@@ -1,0 +1,3 @@
+accessing
+hasEnded
+	^hasEnded.

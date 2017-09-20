@@ -1,8 +1,9 @@
 {
 	"instance" : {
-		"testPlayingUntilWinner" : "ArielFavioCarrizo 9/18/2017 19:23",
-		"testGameCreation" : "ArielFavioCarrizo 9/18/2017 19:26",
-		"testGivingTurnToAPlayer" : "ArielFavioCarrizo 9/18/2017 18:00",
+		"testPlayingUntilWinner" : "ArielFavioCarrizo 9/19/2017 21:43",
+		"testGivingTurnToAPlayer" : "ArielFavioCarrizo 9/19/2017 21:40",
+		"testAPlayerCanNotPlayOutOfTurn" : "ArielFavioCarrizo 9/20/2017 01:58",
+		"testGameCreation" : "ArielFavioCarrizo 9/19/2017 21:37",
 		"testMoveAPlayer" : "ArielFavioCarrizo 9/18/2017 18:01"
 	},
 	"class" : { }

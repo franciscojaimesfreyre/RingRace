@@ -1,3 +1,3 @@
 action
 throw
-	self shouldBeImplemented.
+	self subclassResponsibility

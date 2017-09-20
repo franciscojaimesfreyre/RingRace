@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Dice",
-	"category" : "RingRace-Model",
+	"super" : "Object",
+	"category" : "RingRace-Model-Game",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"numbers",
-		"numberIndex"
+		"watchedSquare",
+		"game"
 	],
-	"name" : "DeterministicDice",
+	"name" : "PassDetector",
 	"type" : "normal"
 }

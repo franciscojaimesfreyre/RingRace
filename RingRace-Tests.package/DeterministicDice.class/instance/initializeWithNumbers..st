@@ -1,4 +1,4 @@
 initialization
 initializeWithNumbers: someNumbers
-	numbers := someNumbers clone.
-	numberIndex := 1.
+	numbers := someNumbers.
+	numberIndex := 1

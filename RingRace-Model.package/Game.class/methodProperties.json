@@ -1,0 +1,17 @@
+{
+	"instance" : {
+		"giveTurn" : "ArielFavioCarrizo 9/20/2017 01:36",
+		"hasEnded" : "ArielFavioCarrizo 9/18/2017 19:36",
+		"giveTurnTo:" : "ArielFavioCarrizo 9/20/2017 01:39",
+		"winner" : "ArielFavioCarrizo 9/18/2017 19:35",
+		"move:forward:" : "ArielFavioCarrizo 9/20/2017 01:56",
+		"at:put:" : "ArielFavioCarrizo 9/15/2017 18:12",
+		"stateOf:" : "ArielFavioCarrizo 9/19/2017 22:23",
+		"players" : "ArielFavioCarrizo 9/18/2017 19:24",
+		"initializeWithPlayers:andBoardSize:withNumberOfLaps:withDices:" : "ArielFavioCarrizo 9/19/2017 22:24",
+		"board" : "ArielFavioCarrizo 9/15/2017 18:23"
+	},
+	"class" : {
+		"withPlayers:withBoardSize:withNumberOfLaps:withDices:" : "ArielFavioCarrizo 9/18/2017 17:31"
+	}
+}

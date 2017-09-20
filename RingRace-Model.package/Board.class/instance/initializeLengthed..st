@@ -2,7 +2,6 @@ initialization
 initializeLengthed: aLength
 	|newLastSquare|
 	length := aLength.
-	playerPositions := Dictionary new.
 	
 	firstSquare := Square create.
 	lastSquare := firstSquare.

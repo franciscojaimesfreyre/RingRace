@@ -1,3 +1,3 @@
-accesing
+accessing
 firstSquare
 	^firstSquare.

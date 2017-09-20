@@ -1,13 +1,12 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "RingRace-Model",
+	"category" : "RingRace-Model-Game",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"name",
-		"position"
+		"name"
 	],
 	"name" : "Player",
 	"type" : "normal"

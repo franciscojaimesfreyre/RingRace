@@ -1,8 +1,5 @@
 action
 throwDice
-	|numberOfMovements|
-	
-	numberOfMovements := 0.
-	dices do: [ :eachDice | numberOfMovements := numberOfMovements + (eachDice throw) ].
-	
-	game move: player forward: numberOfMovements.
+	| numberOfMovements |
+	numberOfMovements := dices sumNumbers: [ :eachDice | eachDice throw ].
+	game move: player forward: numberOfMovements
