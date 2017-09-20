@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GameHasNotEndedException",
+	"name" : "GameEndedException",
 	"type" : "normal"
 }

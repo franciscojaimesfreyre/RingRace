@@ -9,4 +9,4 @@ giveTurnTo: aPlayer
 				ifTrue: [ currentPlayerIndex := 1 ]
 				ifFalse: [ currentPlayerIndex := currentPlayerIndex + 1 ] ]
 			ifFalse:[ NotYourTurnException signal: 'This is not your turn' ] ]
-		ifTrue: [ GameEndException signal: 'Game has been ended' ]
+		ifTrue: [ GameEndedException signal: 'Game has been ended' ]

@@ -17,88 +17,68 @@ testPlayingUntilWinner
 	self assert: (game stateOf: player1) laps equals: 0.
 	self assert: (game stateOf: player2) position == firstSquare.
 	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurn.
-	self
-		assert:
-			(game stateOf: player1) position
-				== firstSquare next next next next next.
+	game giveTurnTo: player1.
+	self assert: (game stateOf: player1) position == firstSquare next next next next next.
 	self assert: (game stateOf: player1) laps equals: 0.
 	self assert: (game stateOf: player2) position == firstSquare.
 	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurn.
-	self
-		assert:
-			(game stateOf: player1) position
-				== firstSquare next next next next next.
+	game giveTurnTo: player2.
+	self assert: (game stateOf: player1) position == firstSquare next next next next next.
 	self assert: (game stateOf: player1) laps equals: 0.
-	self
-		assert: (game stateOf: player2) position == firstSquare next next next.
+	self assert: (game stateOf: player2) position == firstSquare next next next.
 	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurn.
+	game giveTurnTo: player1.
 	self
 		assert:
 			(game stateOf: player1) position
-				==
-					firstSquare next next next next next next next next next next next
-						next next.
+				== firstSquare next next next next next next next next next next next next next.
+	self assert: (game stateOf: player1) laps equals: 1.
+	self assert: (game stateOf: player2) position == firstSquare next next next.
+	self assert: (game stateOf: player2) laps equals: 0.
+	game giveTurnTo: player2.
+	self
+		assert:
+			(game stateOf: player1) position
+				== firstSquare next next next next next next next next next next next next next.
 	self assert: (game stateOf: player1) laps equals: 1.
 	self
-		assert: (game stateOf: player2) position == firstSquare next next next.
+		assert: (game stateOf: player2) position == firstSquare next next next next next next next next.
 	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurn.
+	game giveTurnTo: player1.
 	self
 		assert:
 			(game stateOf: player1) position
 				==
-					firstSquare next next next next next next next next next next next
-						next next.
+					firstSquare next next next next next next next next next next next next next next next
+						next next next.
 	self assert: (game stateOf: player1) laps equals: 1.
 	self
-		assert:
-			(game stateOf: player2) position
-				== firstSquare next next next next next next next next.
+		assert: (game stateOf: player2) position == firstSquare next next next next next next next next.
 	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurn.
+	game giveTurnTo: player2.
 	self
 		assert:
 			(game stateOf: player1) position
 				==
-					firstSquare next next next next next next next next next next next
-						next next next next next next next.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self
-		assert:
-			(game stateOf: player2) position
-				== firstSquare next next next next next next next next.
-	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurn.
-	self
-		assert:
-			(game stateOf: player1) position
-				==
-					firstSquare next next next next next next next next next next next
-						next next next next next next next.
+					firstSquare next next next next next next next next next next next next next next next
+						next next next.
 	self assert: (game stateOf: player1) laps equals: 1.
 	self
 		assert:
 			(game stateOf: player2) position
-				==
-					firstSquare next next next next next next next next next next next
-						next next next next.
+				== firstSquare next next next next next next next next next next next next next next next.
 	self assert: (game stateOf: player2) laps equals: 1.
-	game giveTurn.
+	game giveTurnTo: player1.
 	self
 		assert:
 			(game stateOf: player1) position
 				==
-					firstSquare next next next next next next next next next next next
-						next next next next next next next next.
+					firstSquare next next next next next next next next next next next next next next next
+						next next next next.
 	self assert: (game stateOf: player1) laps equals: 2.
 	self
 		assert:
 			(game stateOf: player2) position
-				==
-					firstSquare next next next next next next next next next next next
-						next next next next.
+				== firstSquare next next next next next next next next next next next next next next next.
 	self assert: (game stateOf: player2) laps equals: 1.
 	self assert: game winner == player1
