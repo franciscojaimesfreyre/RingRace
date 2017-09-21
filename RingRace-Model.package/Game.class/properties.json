@@ -14,7 +14,8 @@
 		"hasEnded",
 		"playerStates",
 		"dices",
-		"currentPlayerIndex"
+		"currentPlayerIndex",
+		"lastSquarePassDetector"
 	],
 	"name" : "Game",
 	"type" : "normal"

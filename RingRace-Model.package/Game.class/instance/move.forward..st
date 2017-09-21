@@ -1,16 +1,11 @@
 action
 move: aPlayer forward: numberOfSquares
-	| square remainingSquares |
+	| remainingSquares forwardMovement |
 	remainingSquares := numberOfSquares.
+	forwardMovement := ForwardMovement create.
 	[ remainingSquares ~~ 0 and: hasEnded not ]
-		whileTrue: [ square := (self stateOf: aPlayer) position.
-			square == board lastSquare
-				ifTrue: [ | state laps |
-					state := self stateOf: aPlayer.
-					laps := state laps + 1.
-					self at: aPlayer put: (state withNewLaps: laps).
-					hasEnded := laps = numberOfLaps ].
-			hasEnded
-				ifTrue: [ winner := aPlayer ]
-				ifFalse: [ ForwardMovement create move: aPlayer in: self.
-					remainingSquares := remainingSquares - 1 ] ]
+		whileTrue: [ forwardMovement move: aPlayer in: self.
+			( (self stateOf: aPlayer) laps >= numberOfLaps )
+				ifTrue: [ hasEnded := true.
+					winner := aPlayer ]
+				ifFalse: [ remainingSquares := remainingSquares - 1 ] ]

@@ -6,9 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"length",
-		"lastSquare",
-		"firstSquare"
+		"squares"
 	],
 	"name" : "Board",
 	"type" : "normal"

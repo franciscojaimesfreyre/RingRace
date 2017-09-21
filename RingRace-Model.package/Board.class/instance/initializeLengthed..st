@@ -1,17 +1,4 @@
 initialization
 initializeLengthed: aLength
-	|newLastSquare|
-	length := aLength.
-	
-	firstSquare := Square create.
-	lastSquare := firstSquare.
-	
-	2 to: aLength do: [:i |
-		newLastSquare := Square create.
-		lastSquare linkNext: newLastSquare.
-		newLastSquare linkPrevious: lastSquare.
-		lastSquare := newLastSquare.
-	].
-
-	lastSquare linkNext: firstSquare.
-	firstSquare linkPrevious: lastSquare.
+	squares := OrderedCollection new.
+	1 to: aLength do: [ :i | squares addLast: (Square positionedIn: i) ]

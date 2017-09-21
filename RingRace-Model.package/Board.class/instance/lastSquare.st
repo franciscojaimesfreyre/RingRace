@@ -1,3 +1,3 @@
 accessing
 lastSquare
-	^lastSquare.
+	^ squares at: (squares size)

@@ -1,4 +1,4 @@
 initialization
-initializePositionedIn: aSquare withLaps: someLaps 
-	position := aSquare .
-	laps := someLaps.
+initializePositionedIn: aPosition withLaps: someLaps
+	position := aPosition .
+	laps := someLaps

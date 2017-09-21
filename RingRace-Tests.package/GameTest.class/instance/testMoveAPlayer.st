@@ -8,4 +8,4 @@ testMoveAPlayer
 	oldPosition := (game stateOf: player) position.
 	game move: player forward: 1.
 	newPosition := (game stateOf: player) position.
-	self assert: newPosition equals: ( oldPosition next ).
+	self assert: newPosition equals: ( oldPosition + 1 ).

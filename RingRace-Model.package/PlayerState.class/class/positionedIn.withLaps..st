@@ -1,3 +1,3 @@
 initializing
-positionedIn: aSquare withLaps: someLaps
-	^self new initializePositionedIn: aSquare withLaps: someLaps .
+positionedIn: aPosition withLaps: someLaps
+	^ self new initializePositionedIn: aPosition withLaps: someLaps

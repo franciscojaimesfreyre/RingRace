@@ -1,3 +1,3 @@
 accessing
 firstSquare
-	^firstSquare.
+	^ squares at: 1

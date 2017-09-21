@@ -9,5 +9,5 @@ testWithOneForwardMovement
 	oldPosition := (game stateOf: player) position.
 	movement move: player in: game.
 	newPosition := (game stateOf: player) position.
-	self assert: newPosition equals: oldPosition next.
+	self assert: newPosition equals: (oldPosition + 1).
 	

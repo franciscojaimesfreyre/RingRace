@@ -8,18 +8,13 @@ testGivingTurnToAPlayer
 		withBoardSize: 30
 		withNumberOfLaps: 3
 		withDices: dices.
-	square := game board firstSquare.
-	self assert: (game stateOf: player) position equals: square.
+	self assert: (game stateOf: player) position equals: 1.
 	turn := Turn of: game for: player withDices: dices.
-	square := square next.
 	player play: turn.
-	self assert: (game stateOf: player) position equals: square.
-	square := square next next.
+	self assert: (game stateOf: player) position equals: 2.
 	player play: turn.
-	self assert: (game stateOf: player) position equals: square.
-	square := square next next next.
+	self assert: (game stateOf: player) position equals: 4.
 	player play: turn.
-	self assert: (game stateOf: player) position equals: square.
-	square := square next next next next.
+	self assert: (game stateOf: player) position equals: 7.
 	player play: turn.
-	self assert: (game stateOf: player) position equals: square
+	self assert: (game stateOf: player) position equals: 11
