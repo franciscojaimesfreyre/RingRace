@@ -1,4 +1,9 @@
 {
-	"instance" : { },
-	"class" : { }
+	"instance" : {
+		"applyTo:in:" : "ArielFavioCarrizo 10/1/2017 17:21",
+		"initializeNewWithN:" : "ArielFavioCarrizo 10/1/2017 17:12"
+	},
+	"class" : {
+		"newWithN:" : "ArielFavioCarrizo 10/1/2017 17:11"
+	}
 }

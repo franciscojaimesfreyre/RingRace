@@ -1,5 +1,6 @@
 {
 	"instance" : {
+		"testPlayingUntilWormHoleEffect" : "ArielFavioCarrizo 10/1/2017 16:43",
 		"testGivingTurnToAPlayer" : "ArielFavioCarrizo 9/27/2017 21:05",
 		"testPlayingUntilSpeedUpEffect" : "ArielFavioCarrizo 10/1/2017 16:10",
 		"testPlayingWithEmptySquareEffectsUntilWinner" : "ArielFavioCarrizo 9/27/2017 21:06",
@@ -7,7 +8,7 @@
 		"testPlayingUntilAtomicBombEffect" : "ArielFavioCarrizo 9/27/2017 21:17",
 		"testGameCreation" : "ArielFavioCarrizo 9/27/2017 21:04",
 		"testMoveAPlayer" : "ArielFavioCarrizo 10/1/2017 16:31",
-		"testPlayingUntilWormHoleEffect" : "ArielFavioCarrizo 10/1/2017 16:43"
+		"testPlayingUntilMoonwalkEffect" : "ArielFavioCarrizo 10/1/2017 17:16"
 	},
 	"class" : { }
 }
