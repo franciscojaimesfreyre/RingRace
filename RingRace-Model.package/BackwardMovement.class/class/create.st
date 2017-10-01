@@ -1,0 +1,3 @@
+instantiation
+create
+	^self new
