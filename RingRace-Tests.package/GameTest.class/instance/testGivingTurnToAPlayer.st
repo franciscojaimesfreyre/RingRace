@@ -2,10 +2,10 @@ tests
 testGivingTurnToAPlayer
 	| game player turn dices square |
 	player := Player named: 'Nico'.
-	dices := {(DeterministicDice withNumbers: #(1 2 3 4))}.
+	dices := {(Dice withNumbersFrom: (ReadStream on: #(1 2 3 4)))}.
 	game := Game
 		withPlayers: {player}
-		withBoardSize: 30
+		withBoard: ( Board withSquareEffects: ( OrderedCollection new: 30 withAll: ( NoSquareEffect new ) ) )
 		withNumberOfLaps: 3
 		withDices: dices.
 	self assert: (game stateOf: player) position equals: 1.

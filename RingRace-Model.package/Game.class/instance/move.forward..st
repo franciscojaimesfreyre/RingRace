@@ -1,7 +1,7 @@
 action
-move: aPlayer forward: numberOfSquares
+move: aPlayer forward: aNumberOfSquares
 	| remainingSquares forwardMovement |
-	remainingSquares := numberOfSquares.
+	remainingSquares := aNumberOfSquares.
 	forwardMovement := ForwardMovement create.
 	[ remainingSquares ~~ 0 and: hasEnded not ]
 		whileTrue: [ forwardMovement move: aPlayer in: self.

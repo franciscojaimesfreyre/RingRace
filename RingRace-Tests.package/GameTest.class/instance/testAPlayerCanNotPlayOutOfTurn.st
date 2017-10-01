@@ -7,9 +7,9 @@ testAPlayerCanNotPlayOutOfTurn
 	player2}.
 	game := Game
 		withPlayers: players
-		withBoardSize: 10
+		withBoard: ( Board withSquareEffects: ( OrderedCollection new: 10 withAll: ( NoSquareEffect new ) ) )
 		withNumberOfLaps: 2
-		withDices: {(DeterministicDice withNumbers: #(3 2 5 1 2 3 5))}.
+		withDices: {(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 3 5)))}.
 	firstSquare := game board firstSquare.
 	game giveTurnTo: player1.
 	self should: [ game giveTurnTo: player1 ] raise: NotYourTurnException

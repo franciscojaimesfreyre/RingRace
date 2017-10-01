@@ -4,10 +4,10 @@ testGameCreation
 	player := Player named: 'Nico'.
 	game := Game
 		withPlayers: {player}
-		withBoardSize: 30
+		withBoard: ( Board withSquareEffects: ( OrderedCollection new: 30 withAll: ( NoSquareEffect new ) ) )
 		withNumberOfLaps: 3
 		withDices:
-			{(RandomDice withFaces: 6).
-			(RandomDice withFaces: 6)}.
+			{(Dice withNumbersFrom: ( ReadStream on: #( 1 2 3 4 5 6) )).
+			(Dice withNumbersFrom: ( ReadStream on: #( 1 2 3 4 5 6) ))}.
 	self assert: game players equals:
 		{player} asOrderedCollection

@@ -1,3 +1,3 @@
 action
 throw
-	self subclassResponsibility
+	^numbersSource next.

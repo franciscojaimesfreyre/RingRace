@@ -1,8 +1,8 @@
 tests
 testWithOneForwardMovement
-	|player game movement oldPosition newPosition|
+	|player game movement oldPosition newPosition| 
 	player := Player named: 'Fran'.
-	game := Game withPlayers: { player  } withBoardSize: 30  withNumberOfLaps: 3 withDices: { DeterministicDice withNumbers: #( 1 2 3 ) }.
+	game := Game withPlayers: { player  } withBoard: ( Board withSquareEffects: ( OrderedCollection new: 30 withAll: ( NoSquareEffect new ) ) )  withNumberOfLaps: 3 withDices: { Dice withNumbersFrom: ( ReadStream on: #( 1 2 3 ) ) }.
 	
 	movement := ForwardMovement create.
 	

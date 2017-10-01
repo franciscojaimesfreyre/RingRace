@@ -14,4 +14,4 @@ move: aPlayer in: aGame
 		position := position + 1.
 	].
 	
-	aGame at: aPlayer put: ( (state withNewPosition: position) withNewLaps: laps ).
+	aGame at: aPlayer put: ( PlayerState positionedIn: position withLaps: laps ).

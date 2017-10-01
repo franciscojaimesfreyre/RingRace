@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "SquareEffect",
 	"category" : "RingRace-Model-Square",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"position",
-		"effect"
-	],
-	"name" : "Square",
+	"instvars" : [ ],
+	"name" : "TimeMachineSquareEffect",
 	"type" : "normal"
 }
