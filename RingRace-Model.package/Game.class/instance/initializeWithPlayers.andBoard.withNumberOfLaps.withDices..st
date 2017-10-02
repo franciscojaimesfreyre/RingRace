@@ -3,6 +3,7 @@ initializeWithPlayers: somePlayers andBoard: aBoard withNumberOfLaps: aNumberOfL
 	players := OrderedCollection withAll: somePlayers.
 	board := aBoard.
 	playerStates := Dictionary new.
+	savedPlayerStates := Dictionary new.
 	dices := someDices.
 	currentPlayerIndex := 1.
 	numberOfLaps := aNumberOfLaps.

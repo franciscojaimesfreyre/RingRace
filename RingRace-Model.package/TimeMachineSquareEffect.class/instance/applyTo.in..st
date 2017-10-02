@@ -1,3 +1,3 @@
 action
 applyTo: aPlayer in: aGame 
-	aGame revertStateOf: aPlayer 
+	aGame recoverStateOf: aPlayer 
