@@ -1,14 +1,15 @@
 {
 	"instance" : {
+		"testPlayingUntilAtomicBombEffect" : "ArielFavioCarrizo 9/27/2017 21:17",
+		"testMoveAPlayer" : "ArielFavioCarrizo 10/1/2017 16:31",
+		"testPlayingUntilTimeMachineEffect" : "ArielFavioCarrizo 10/1/2017 20:59",
+		"testPlayingUntilMoonwalkEffect" : "ArielFavioCarrizo 10/1/2017 17:16",
+		"testPlayingUntilSpeedUpEffect" : "ArielFavioCarrizo 10/1/2017 16:10",
+		"testGameCreation" : "ArielFavioCarrizo 9/27/2017 21:04",
+		"testAPlayerCanNotPlayOutOfTurn" : "ArielFavioCarrizo 9/27/2017 21:04",
 		"testPlayingUntilWormHoleEffect" : "ArielFavioCarrizo 10/1/2017 16:43",
 		"testGivingTurnToAPlayer" : "ArielFavioCarrizo 9/27/2017 21:05",
-		"testPlayingUntilSpeedUpEffect" : "ArielFavioCarrizo 10/1/2017 16:10",
-		"testPlayingWithEmptySquareEffectsUntilWinner" : "ArielFavioCarrizo 9/27/2017 21:06",
-		"testAPlayerCanNotPlayOutOfTurn" : "ArielFavioCarrizo 9/27/2017 21:04",
-		"testPlayingUntilAtomicBombEffect" : "ArielFavioCarrizo 9/27/2017 21:17",
-		"testGameCreation" : "ArielFavioCarrizo 9/27/2017 21:04",
-		"testMoveAPlayer" : "ArielFavioCarrizo 10/1/2017 16:31",
-		"testPlayingUntilMoonwalkEffect" : "ArielFavioCarrizo 10/1/2017 17:16"
+		"testPlayingWithEmptySquareEffectsUntilWinner" : "ArielFavioCarrizo 9/27/2017 21:06"
 	},
 	"class" : { }
 }
