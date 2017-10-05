@@ -1,0 +1,17 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'RingRace',
+      #load: ['Development'],
+      #platforms : [ #pharo]
+    }
+  ],
+  #testing: {
+    #coverage: {
+      #packages: [ 'RingRace-*' ]
+    },
+    #include : {
+      #packages: [ 'RingRace-Tests' ]
+    }
+  }
+}
