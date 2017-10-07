@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"applyTo:in:" : "ArielFavioCarrizo 10/1/2017 17:21",
-		"initializeNewWithN:" : "ArielFavioCarrizo 10/1/2017 17:12"
+		"applyTo:in:" : "ArielFavioCarrizo 10/6/2017 19:57",
+		"initializeWithSquaresToMove:" : "ArielFavioCarrizo 10/6/2017 20:18"
 	},
 	"class" : {
-		"newWithN:" : "ArielFavioCarrizo 10/1/2017 17:11"
+		"newWithSquaresToMove:" : "ArielFavioCarrizo 10/6/2017 20:19"
 	}
 }

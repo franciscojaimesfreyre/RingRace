@@ -13,7 +13,7 @@ testPlayingUntilMoonwalkEffect
 					{NoSquareEffect new.
 					NoSquareEffect new.
 					NoSquareEffect new.
-					MoonwalkSquareEffect newWithN: 2.
+					(MoonwalkSquareEffect newWithSquaresToMove: 2).
 					NoSquareEffect new})
 		withNumberOfLaps: 2
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 2 2)))}.

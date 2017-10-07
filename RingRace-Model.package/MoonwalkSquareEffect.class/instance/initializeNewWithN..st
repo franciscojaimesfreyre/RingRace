@@ -1,3 +1,0 @@
-initialization
-initializeNewWithN: aNumberOfSquares
-squaresToMove:=aNumberOfSquares 

@@ -1,15 +1,15 @@
 {
 	"instance" : {
 		"hasEnded" : "ArielFavioCarrizo 9/18/2017 19:36",
-		"giveTurnTo:" : "ArielFavioCarrizo 9/20/2017 21:51",
+		"giveTurnTo:" : "ArielFavioCarrizo 10/6/2017 20:06",
 		"stateOf:" : "ArielFavioCarrizo 10/1/2017 22:09",
-		"move:forward:" : "ArielFavioCarrizo 10/1/2017 23:09",
+		"move:forward:" : "ArielFavioCarrizo 10/6/2017 20:06",
 		"at:put:" : "ArielFavioCarrizo 10/1/2017 22:08",
 		"recoverStateOf:" : "ArielFavioCarrizo 10/1/2017 23:15",
 		"players" : "ArielFavioCarrizo 9/18/2017 19:24",
 		"saveStateOf:" : "ArielFavioCarrizo 10/1/2017 23:08",
 		"winner" : "ArielFavioCarrizo 9/20/2017 16:08",
-		"move:backward:" : "ArielFavioCarrizo 10/1/2017 23:08",
+		"move:backward:" : "ArielFavioCarrizo 10/6/2017 20:06",
 		"initializeWithPlayers:andBoard:withNumberOfLaps:withDices:" : "ArielFavioCarrizo 10/1/2017 23:08",
 		"ifTurnOf:andGameNotEndedDo:" : "ArielFavioCarrizo 9/20/2017 21:52",
 		"board" : "ArielFavioCarrizo 9/15/2017 18:23",

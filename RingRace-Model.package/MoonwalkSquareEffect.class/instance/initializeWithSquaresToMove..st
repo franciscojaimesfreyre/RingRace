@@ -1,0 +1,3 @@
+initialization
+initializeWithSquaresToMove: aNumberOfSquares
+	squaresToMove := aNumberOfSquares
