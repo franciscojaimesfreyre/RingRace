@@ -1,7 +1,9 @@
-testing
+enumerating
 ifTurnOf: aPlayer andGameNotEndedDo: aBlockClosure
 	hasEnded
-		ifFalse: [ (players at: currentPlayerIndex)= aPlayer
-				ifTrue: aBlockClosure
-				ifFalse: [ NotYourTurnException signal: 'This is not your turn'] ]
-		ifTrue: [ GameEndedException signal: 'Game has been ended' ]
+	ifTrue: [ GameException signal: 'Game has ended' ].
+		(players at: currentPlayerIndex) = aPlayer
+			ifFalse: [ GameException signal: ('You can not play out of turn, current player is: <1s>' expandMacrosWith: aPlayer name) ].
+			aBlockClosure value.
+				
+		

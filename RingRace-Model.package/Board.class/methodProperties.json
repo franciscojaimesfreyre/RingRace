@@ -1,10 +1,9 @@
 {
 	"instance" : {
-		"firstSquare" : "ArielFavioCarrizo 9/20/2017 20:34",
-		"length" : "ArielFavioCarrizo 9/20/2017 20:35",
+		"lastSquare" : "ArielFavioCarrizo 9/20/2017 20:34",
 		"squareAt:" : "ArielFavioCarrizo 9/20/2017 21:14",
 		"initializeWithSquareEffects:" : "ArielFavioCarrizo 10/1/2017 15:50",
-		"lastSquare" : "ArielFavioCarrizo 9/20/2017 20:34"
+		"length" : "ArielFavioCarrizo 9/20/2017 20:35"
 	},
 	"class" : {
 		"withRandomSource:andSquareEffectsWithProbability:andLength:" : "ArielFavioCarrizo 10/6/2017 19:36",
