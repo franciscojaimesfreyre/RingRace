@@ -16,13 +16,13 @@ testPlayingWithSquareEffectsUntilWinner
 					SpeedUpSquareEffect new.
 					TimeMachineSquareEffect new.
 					WormHoleSquareEffect new.
-					MoonwalkSquareEffect new.
+					MoonwalkSquareEffect newWithSquaresToMove: 3.
 					NoSquareEffect new.
 					NoSquareEffect new})
-		withNumberOfLaps: 2
+		withNumberOfLaps: 3
 		withDices:
-			{(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 1 3))).
-			(Dice withNumbersFrom: (ReadStream on: #(2 1 3 4 3 4 3)))}.
+			{(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 2 3 2))).
+			(Dice withNumbersFrom: (ReadStream on: #(2 1 3 4 3 6 3 2)))}.
 	self assert: (game stateOf: player1) position == 1.
 	self assert: (game stateOf: player1) laps equals: 0.
 	self assert: (game stateOf: player2) position == 1.
@@ -53,13 +53,18 @@ testPlayingWithSquareEffectsUntilWinner
 	self assert: (game stateOf: player2) position == 8.
 	self assert: (game stateOf: player2) laps equals: 1.
 	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self assert: (game stateOf: player2) position == 1.
+	self assert: (game stateOf: player1) position == 8.
+	self assert: (game stateOf: player1) laps equals: 0.
+	self assert: (game stateOf: player2) position == 7.
 	self assert: (game stateOf: player2) laps equals: 2.
-	"game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player1) laps equals: 2.
-	self assert: (game stateOf: player2) position == 6.
-	self assert: (game stateOf: player2) laps equals: 1.
-	self assert: game winner == player1"
+	game giveTurnTo: player1.
+	self assert: (game stateOf: player1) position == 8.
+	self assert: (game stateOf: player1) laps equals: 0.
+	self assert: (game stateOf: player2) position == 7.
+	self assert: (game stateOf: player2) laps equals: 2.
+	game giveTurnTo: player2.
+	self assert: (game stateOf: player1) position == 8.
+	self assert: (game stateOf: player1) laps equals: 0.
+	self assert: (game stateOf: player2) position == 1.
+	self assert: (game stateOf: player2) laps equals: 3.
+	self assert: game winner == player2
