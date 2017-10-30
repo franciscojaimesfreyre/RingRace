@@ -1,14 +1,12 @@
 tests
 testAPlayerCanNotPlayOutOfTurn
-	| game player1 player2 players firstSquare |
-	player1 := Player named: 'Nico'.
-	player2 := Player named: 'Santi'.
-	players := {player1.
-	player2}.
+	| game nico santi |
+	nico := Player named: 'Nico'.
+	santi := Player named: 'Santi'.
 	game := Game
-		withPlayers: players
+		withPlayers: {nico. santi}
 		withBoard: (Board withSquareEffects: (OrderedCollection new: 10 withAll: NoSquareEffect new))
 		withNumberOfLaps: 2
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 3 5)))}.
-	game giveTurnTo: player1.
-	self should: [ game giveTurnTo: player1 ] raise: GameException
+	game giveTurnTo: nico.
+	self should: [ game giveTurnTo: nico ] raise: GameException

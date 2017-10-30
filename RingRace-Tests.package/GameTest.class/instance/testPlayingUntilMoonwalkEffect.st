@@ -1,12 +1,12 @@
 tests
 testPlayingUntilMoonwalkEffect
-	| game player1 player2 players |
-	player1 := Player named: 'Nico'.
-	player2 := Player named: 'Santi'.
-	players := {player1.
-	player2}.
+	| game nico santi |
+	nico := Player named: 'Nico'.
+	santi := Player named: 'Santi'.
 	game := Game
-		withPlayers: players
+		withPlayers:
+			{nico.
+			santi}
 		withBoard:
 			(Board
 				withSquareEffects:
@@ -17,14 +17,15 @@ testPlayingUntilMoonwalkEffect
 					NoSquareEffect new})
 		withNumberOfLaps: 2
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 2 2)))}.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player2) position == 1.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player2) position == 1.
-	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player2) position == 3.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 4.
-	self assert: (game stateOf: player2) position == 1
+	self assert: (game stateOf: nico) position == 1.
+	self assert: (game stateOf: santi) position == 1.
+	game giveTurnTo: nico.
+	self assert: (game stateOf: nico) position == 2.
+	self assert: (game stateOf: santi) position == 1.
+	game giveTurnTo: santi.
+	self assert: (game stateOf: nico) position == 2.
+	self assert: (game stateOf: santi) position == 3.
+	game giveTurnTo: nico.
+	"Nico falls in position 4 which has a MoonwalkEffect, so Santi moves back 2 squares as all the other players if there were any"
+	self assert: (game stateOf: nico) position == 4.
+	self assert: (game stateOf: santi) position == 1

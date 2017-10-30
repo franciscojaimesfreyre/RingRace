@@ -1,10 +1,10 @@
 tests
 testPlayingUntilTimeMachineEffect
-	| game player1 player2 players |
-	player1 := Player named: 'Nico'.
-	player2 := Player named: 'Santi'.
-	players := {player1.
-	player2}.
+	| game nico santi players |
+	nico := Player named: 'Nico'.
+	santi := Player named: 'Santi'.
+	players := {nico.
+	santi}.
 	game := Game
 		withPlayers: players
 		withBoard:
@@ -13,18 +13,20 @@ testPlayingUntilTimeMachineEffect
 					{NoSquareEffect new.
 					NoSquareEffect new.
 					NoSquareEffect new.
+					NoSquareEffect new.
+					NoSquareEffect new.
 					TimeMachineSquareEffect new.
 					NoSquareEffect new})
 		withNumberOfLaps: 2
-		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1 2)))}.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player2) position == 1.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player2) position == 1.
-	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player2) position == 2.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player2) position == 2
+		withDices: {(Dice withNumbersFrom: (ReadStream on: #(2 1 3)))}.
+	self assert: (game stateOf: nico) position == 1.
+	self assert: (game stateOf: santi) position == 1.
+	game giveTurnTo: nico.
+	self assert: (game stateOf: nico) position == 3.
+	self assert: (game stateOf: santi) position == 1.
+	game giveTurnTo: santi.
+	self assert: (game stateOf: nico) position == 3.
+	self assert: (game stateOf: santi) position == 2.
+	game giveTurnTo: nico.
+	self assert: (game stateOf: nico) position == 3.
+	self assert: (game stateOf: santi) position == 2

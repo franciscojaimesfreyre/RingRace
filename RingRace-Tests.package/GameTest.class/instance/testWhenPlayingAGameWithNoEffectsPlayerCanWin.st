@@ -1,5 +1,5 @@
 tests
-testPlayingWithEmptySquareEffectsUntilWinner
+testWhenPlayingAGameWithNoEffectsPlayerCanWin
 	| game player1 player2 players |
 	player1 := Player named: 'Nico'.
 	player2 := Player named: 'Santi'.
