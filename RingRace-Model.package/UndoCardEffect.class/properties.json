@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "RingRace-Model-Game",
+	"category" : "RingRace-Model-Card",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"name",
-		"cards"
-	],
-	"name" : "Player",
+	"instvars" : [ ],
+	"name" : "UndoCardEffect",
 	"type" : "normal"
 }

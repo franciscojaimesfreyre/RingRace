@@ -15,7 +15,6 @@
 		"playerStates",
 		"dices",
 		"currentPlayerIndex",
-		"lastSquarePassDetector",
 		"savedPlayerStates"
 	],
 	"name" : "Game",

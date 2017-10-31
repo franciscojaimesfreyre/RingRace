@@ -4,14 +4,6 @@
 		"testPlayingUntilMoonwalkEffect" : "ArielFavioCarrizo 10/30/2017 15:38",
 		"testPlayingUntilTimeMachineEffect" : "ArielFavioCarrizo 10/30/2017 16:32",
 		"testPlayingUntilSpeedUpEffect" : "ArielFavioCarrizo 10/1/2017 16:10",
-<<<<<<< Updated upstream
-		"testGameCreation" : "ArielFavioCarrizo 9/27/2017 21:04",
-		"testPlayingWithSquareEffectsUntilWinner" : "ArielFavioCarrizo 10/9/2017 22:28",
-		"testAPlayerCanNotPlayOutOfTurn" : "ArielFavioCarrizo 10/10/2017 16:54",
-		"testPlayingUntilWormHoleEffect" : "ArielFavioCarrizo 10/4/2017 20:21",
-		"testGivingTurnToAPlayer" : "ArielFavioCarrizo 9/27/2017 21:05",
-		"testPlayingWithEmptySquareEffectsUntilWinner" : "ArielFavioCarrizo 9/27/2017 21:06"
-=======
 		"testGameCreationWithPlayersAndBoard" : "ArielFavioCarrizo 10/30/2017 15:32",
 		"testWhenFallingIntoMoonwalkEffectInFirstTurnPlayersGetNegativeLaps" : "ArielFavioCarrizo 10/30/2017 16:48",
 		"testWhenGivingTurnToAPlayerItChangesState" : "ArielFavioCarrizo 10/30/2017 15:18",
@@ -22,7 +14,6 @@
 		"testPlayingUntilWormHoleEffect" : "ArielFavioCarrizo 10/30/2017 16:38",
 		"testApplyingUndoCardThenPlayerGoesBackToPreviousState" : "ArielFavioCarrizo 10/24/2017 17:35",
 		"testAPlayerCanNotPlayOutOfTurn" : "ArielFavioCarrizo 10/30/2017 15:15"
->>>>>>> Stashed changes
 	},
 	"class" : { }
 }
