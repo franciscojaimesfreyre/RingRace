@@ -1,7 +1,6 @@
 {
 	"instance" : {
 		"testPlayingUntilAtomicBombEffect" : "ArielFavioCarrizo 9/27/2017 21:17",
-		"testPlayingUntilMoonwalkEffect" : "ArielFavioCarrizo 10/30/2017 15:38",
 		"testPlayingUntilTimeMachineEffect" : "ArielFavioCarrizo 10/30/2017 16:32",
 		"testPlayingUntilSpeedUpEffect" : "ArielFavioCarrizo 10/1/2017 16:10",
 		"testGameCreationWithPlayersAndBoard" : "ArielFavioCarrizo 10/30/2017 15:32",
@@ -12,8 +11,8 @@
 		"testWhenMovingAPlayerForwardOrBackwardItChangesState" : "ArielFavioCarrizo 10/30/2017 15:23",
 		"testPlayingWithSquareEffectsUntilWinner" : "ArielFavioCarrizo 10/9/2017 22:28",
 		"testPlayingUntilWormHoleEffect" : "ArielFavioCarrizo 10/30/2017 16:38",
-		"testApplyingUndoCardThenPlayerGoesBackToPreviousState" : "ArielFavioCarrizo 10/24/2017 17:35",
-		"testAPlayerCanNotPlayOutOfTurn" : "ArielFavioCarrizo 10/30/2017 15:15"
+		"testAPlayerCanNotPlayOutOfTurn" : "ArielFavioCarrizo 10/30/2017 15:15",
+		"testPlayingUntilMoonwalkEffect" : "ArielFavioCarrizo 10/30/2017 15:38"
 	},
 	"class" : { }
 }

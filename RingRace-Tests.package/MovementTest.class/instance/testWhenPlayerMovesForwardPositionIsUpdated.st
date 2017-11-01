@@ -4,10 +4,10 @@ testWhenPlayerMovesForwardPositionIsUpdated
 	player := Player named: 'Fran'.
 	game := Game withPlayers: { player  } withBoard: ( Board withSquareEffects: ( OrderedCollection new: 30 withAll: ( NoSquareEffect new ) ) )  withNumberOfLaps: 3 withDices: { Dice withNumbersFrom: ( ReadStream on: #( 1 2 3 ) ) }.
 	
-	movement := ForwardMovement create.
+	movement := ForwardMovement moving: player into: game.
 	
 	oldPosition := (game stateOf: player) position.
-	movement move: player in: game.
+	movement execute.
 	newPosition := (game stateOf: player) position.
 	self assert: newPosition equals: (oldPosition + 1).
 	

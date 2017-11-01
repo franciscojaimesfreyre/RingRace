@@ -1,10 +1,9 @@
 action
 move: aPlayer forward: aNumberOfSquares
-	| remainingSquares forwardMovement |
+	| remainingSquares |
 	remainingSquares := aNumberOfSquares.
-	forwardMovement := ForwardMovement create.
 	[ remainingSquares ~~ 0 and: hasEnded not ]
-		whileTrue: [ forwardMovement move: aPlayer in: self.
+		whileTrue: [ (ForwardMovement moving: aPlayer into: self) execute.
 			(self stateOf: aPlayer) laps >= numberOfLaps
 				ifTrue: [ hasEnded := true.
 					winner := aPlayer ]
