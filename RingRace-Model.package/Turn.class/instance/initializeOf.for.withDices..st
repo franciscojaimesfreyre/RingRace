@@ -1,5 +1,5 @@
 initialization
-initializeOf: aGame for: aPlayer withDices: someDices
-	game := aGame.
-	player := aPlayer.
-	dices := someDices.
+initializeOf: arg1 for: arg2 withDices: arg3
+	game := arg1.
+	player := arg2.
+	dices := arg3

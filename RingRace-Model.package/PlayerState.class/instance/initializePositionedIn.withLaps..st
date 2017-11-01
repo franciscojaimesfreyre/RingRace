@@ -1,4 +1,4 @@
 initialization
-initializePositionedIn: aPosition withLaps: someLaps
-	position := aPosition .
-	laps := someLaps
+initializePositionedIn: arg1 withLaps: arg2
+	position := arg1.
+	laps := arg2

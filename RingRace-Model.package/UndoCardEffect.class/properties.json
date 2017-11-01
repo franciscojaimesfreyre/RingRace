@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "InstantCardEffect",
+	"category" : "RingRace-Model-Card",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UndoCardEffect",
+	"type" : "normal"
+}

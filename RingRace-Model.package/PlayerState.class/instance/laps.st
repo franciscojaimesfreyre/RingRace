@@ -1,3 +1,3 @@
 accesing
 laps
-	^laps.
+	^ laps

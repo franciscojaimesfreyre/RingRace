@@ -1,3 +1,3 @@
 action
 throw
-	^numbersSource next.
+	^ numbersSource next

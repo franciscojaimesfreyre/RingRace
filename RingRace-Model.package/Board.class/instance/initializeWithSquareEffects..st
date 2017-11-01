@@ -1,9 +1,9 @@
 instance initialization
-initializeWithSquareEffects: someSquareEffects
-	|index|
-	squares := OrderedCollection new.	
-	index := 1.	 
-	someSquareEffects do: [ :eachSquareEffect |
-		squares addLast: (Square positionedIn: index withEffect: eachSquareEffect ).
-		index := index + 1.
-	].
+initializeWithSquareEffects: arg1
+	| tmp2 |
+	squares := OrderedCollection new.
+	tmp2 := 1.
+	arg1
+		do: [ :arg2 | 
+			squares addLast: (Square positionedIn: tmp2 withEffect: arg2).
+			tmp2 := tmp2 + 1 ]

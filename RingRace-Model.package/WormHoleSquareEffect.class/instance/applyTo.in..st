@@ -1,3 +1,3 @@
 action
-applyTo: aPlayer in: aGame
-	aGame move: aPlayer backward: 4
+applyTo: arg1 in: arg2
+	arg2 move: arg1 backward: 4

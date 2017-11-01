@@ -1,16 +1,18 @@
 tests
 testMoveAPlayer
-	| game player oldPosition newPosition |
-	player := Player named: 'Nico'.
-	game := Game
-		withPlayers: {player}
-		withBoard: (Board withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
+	| tmp1 tmp2 tmp3 tmp4 |
+	tmp2 := Player named: 'Nico'.
+	tmp1 := Game
+		withPlayers: {tmp2}
+		withBoard:
+			(Board
+				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
 		withNumberOfLaps: 3
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 2 3 4)))}.
-	oldPosition := (game stateOf: player) position.
-	game move: player forward: 1.
-	newPosition := (game stateOf: player) position.
-	self assert: newPosition equals: oldPosition + 1.
-	game move: player backward: 1.
-	newPosition := (game stateOf: player) position.
-	self assert: newPosition equals: oldPosition 
+	tmp3 := (tmp1 stateOf: tmp2) position.
+	tmp1 move: tmp2 forward: 1.
+	tmp4 := (tmp1 stateOf: tmp2) position.
+	self assert: tmp4 equals: tmp3 + 1.
+	tmp1 move: tmp2 backward: 1.
+	tmp4 := (tmp1 stateOf: tmp2) position.
+	self assert: tmp4 equals: tmp3

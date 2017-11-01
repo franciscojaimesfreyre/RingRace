@@ -1,4 +1,4 @@
 initialization
-initializePositionedIn: aPosition withEffect: aSquareEffect
-	position := aPosition.
-	effect := aSquareEffect.
+initializePositionedIn: arg1 withEffect: arg2
+	position := arg1.
+	effect := arg2

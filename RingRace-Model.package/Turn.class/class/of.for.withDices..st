@@ -1,3 +1,3 @@
 instantiation
-of: aGame for: aPlayer withDices: someDices
-	^self new initializeOf: aGame for: aPlayer withDices: someDices.
+of: arg1 for: arg2 withDices: arg3
+	^ self new initializeOf: arg1 for: arg2 withDices: arg3

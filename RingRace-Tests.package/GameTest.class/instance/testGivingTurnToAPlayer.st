@@ -1,20 +1,22 @@
 tests
 testGivingTurnToAPlayer
-	| game player turn dices square |
-	player := Player named: 'Nico'.
-	dices := {(Dice withNumbersFrom: (ReadStream on: #(1 2 3 4)))}.
-	game := Game
-		withPlayers: {player}
-		withBoard: ( Board withSquareEffects: ( OrderedCollection new: 30 withAll: ( NoSquareEffect new ) ) )
+	| tmp1 tmp2 tmp3 tmp4 tmp5 |
+	tmp2 := Player named: 'Nico'.
+	tmp4 := {(Dice withNumbersFrom: (ReadStream on: #(1 2 3 4)))}.
+	tmp1 := Game
+		withPlayers: {tmp2}
+		withBoard:
+			(Board
+				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
 		withNumberOfLaps: 3
-		withDices: dices.
-	self assert: (game stateOf: player) position equals: 1.
-	turn := Turn of: game for: player withDices: dices.
-	player play: turn.
-	self assert: (game stateOf: player) position equals: 2.
-	player play: turn.
-	self assert: (game stateOf: player) position equals: 4.
-	player play: turn.
-	self assert: (game stateOf: player) position equals: 7.
-	player play: turn.
-	self assert: (game stateOf: player) position equals: 11
+		withDices: tmp4.
+	self assert: (tmp1 stateOf: tmp2) position equals: 1.
+	tmp3 := Turn of: tmp1 for: tmp2 withDices: tmp4.
+	tmp2 play: tmp3.
+	self assert: (tmp1 stateOf: tmp2) position equals: 2.
+	tmp2 play: tmp3.
+	self assert: (tmp1 stateOf: tmp2) position equals: 4.
+	tmp2 play: tmp3.
+	self assert: (tmp1 stateOf: tmp2) position equals: 7.
+	tmp2 play: tmp3.
+	self assert: (tmp1 stateOf: tmp2) position equals: 11

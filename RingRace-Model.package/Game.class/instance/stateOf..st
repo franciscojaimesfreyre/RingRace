@@ -1,3 +1,5 @@
 accessing
-stateOf: aPlayer
-	^playerStates at: aPlayer ifAbsentPut: ( PlayerState positionedIn: 1 withLaps: 0).
+stateOf: arg1
+	^ playerStates
+		at: arg1
+		ifAbsentPut: (PlayerState positionedIn: 1 withLaps: 0)

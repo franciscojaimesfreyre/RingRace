@@ -1,3 +1,3 @@
 instantiation
 create
-	^self new
+	^ self new

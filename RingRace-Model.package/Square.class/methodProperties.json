@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"effect" : "ArielFavioCarrizo 9/27/2017 20:01",
-		"initializePositionedIn:withEffect:" : "ArielFavioCarrizo 9/27/2017 20:02"
+		"effect" : "",
+		"initializePositionedIn:withEffect:" : ""
 	},
 	"class" : {
-		"positionedIn:withEffect:" : "ArielFavioCarrizo 9/27/2017 19:53"
+		"positionedIn:withEffect:" : ""
 	}
 }

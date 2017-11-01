@@ -1,3 +1,3 @@
 action
-applyTo: aPlayer in: aGame 
-	aGame recoverStateOf: aPlayer 
+applyTo: arg1 in: arg2
+	arg2 recoverStateOf: arg1

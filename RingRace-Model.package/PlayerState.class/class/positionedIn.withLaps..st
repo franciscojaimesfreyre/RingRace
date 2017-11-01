@@ -1,3 +1,3 @@
 initializing
-positionedIn: aPosition withLaps: someLaps
-	^ self new initializePositionedIn: aPosition withLaps: someLaps
+positionedIn: arg1 withLaps: arg2
+	^ self new initializePositionedIn: arg1 withLaps: arg2

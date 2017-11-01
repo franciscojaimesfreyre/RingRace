@@ -1,3 +1,3 @@
 initialization
-withNewPosition: aSquare
-	^(self class) positionedIn: aSquare withLaps: laps.
+withNewPosition: arg1
+	^ self class positionedIn: arg1 withLaps: laps

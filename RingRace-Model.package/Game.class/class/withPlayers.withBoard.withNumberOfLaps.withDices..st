@@ -1,3 +1,7 @@
 instantiation
-withPlayers: somePlayers withBoard: aBoard withNumberOfLaps: numberOfLaps withDices: someDices
-	^self new initializeWithPlayers: somePlayers andBoard: aBoard withNumberOfLaps: numberOfLaps withDices: someDices.
+withPlayers: arg1 withBoard: arg2 withNumberOfLaps: arg3 withDices: arg4
+	^ self new
+		initializeWithPlayers: arg1
+		andBoard: arg2
+		withNumberOfLaps: arg3
+		withDices: arg4

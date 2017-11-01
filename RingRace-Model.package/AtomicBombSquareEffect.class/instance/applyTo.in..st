@@ -1,5 +1,4 @@
 action
-applyTo: aPlayer in: aGame 
-	(aGame players) do: [ :eachPlayer |
-		aGame at: eachPlayer put: ( PlayerState positionedIn: 1 withLaps: 0 ).
-	]
+applyTo: arg1 in: arg2
+	arg2 players
+		do: [ :arg3 | arg2 at: arg3 put: (PlayerState positionedIn: 1 withLaps: 0) ]

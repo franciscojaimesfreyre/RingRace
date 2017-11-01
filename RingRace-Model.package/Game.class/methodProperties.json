@@ -1,21 +1,22 @@
 {
 	"instance" : {
-		"hasEnded" : "ArielFavioCarrizo 9/18/2017 19:36",
-		"giveTurnTo:" : "ArielFavioCarrizo 10/10/2017 17:02",
-		"advanceTurn" : "ArielFavioCarrizo 10/10/2017 17:02",
-		"move:forward:" : "ArielFavioCarrizo 10/6/2017 20:06",
-		"at:put:" : "ArielFavioCarrizo 10/1/2017 22:08",
-		"recoverStateOf:" : "ArielFavioCarrizo 10/1/2017 23:15",
-		"players" : "ArielFavioCarrizo 9/18/2017 19:24",
-		"saveStateOf:" : "ArielFavioCarrizo 10/1/2017 23:08",
-		"stateOf:" : "ArielFavioCarrizo 10/1/2017 22:09",
-		"move:backward:" : "ArielFavioCarrizo 10/6/2017 20:06",
-		"winner" : "ArielFavioCarrizo 10/10/2017 16:50",
-		"initializeWithPlayers:andBoard:withNumberOfLaps:withDices:" : "ArielFavioCarrizo 10/1/2017 23:08",
-		"ifTurnOf:andGameNotEndedDo:" : "ArielFavioCarrizo 10/10/2017 17:07",
-		"board" : "ArielFavioCarrizo 9/15/2017 18:23"
+		"hasEnded" : "",
+		"giveTurnTo:" : "",
+		"advanceTurn" : "",
+		"move:forward:" : "",
+		"at:put:" : "",
+		"recoverStateOf:" : "",
+		"players" : "",
+		"saveStateOf:" : "",
+		"applyCard:for:" : "ArielFavioCarrizo 10/31/2017 17:39",
+		"move:backward:" : "",
+		"stateOf:" : "",
+		"winner" : "",
+		"initializeWithPlayers:andBoard:withNumberOfLaps:withDices:" : "",
+		"ifTurnOf:andGameNotEndedDo:" : "",
+		"board" : ""
 	},
 	"class" : {
-		"withPlayers:withBoard:withNumberOfLaps:withDices:" : "ArielFavioCarrizo 9/27/2017 21:03"
+		"withPlayers:withBoard:withNumberOfLaps:withDices:" : ""
 	}
 }

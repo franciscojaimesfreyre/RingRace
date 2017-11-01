@@ -1,3 +1,3 @@
 instantiation
-positionedIn: aPosition withEffect: aSquareEffect
-	^self new initializePositionedIn: aPosition withEffect: aSquareEffect.
+positionedIn: arg1 withEffect: arg2
+	^ self new initializePositionedIn: arg1 withEffect: arg2

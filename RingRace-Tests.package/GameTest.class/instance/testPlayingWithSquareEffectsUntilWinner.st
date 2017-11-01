@@ -1,12 +1,12 @@
 tests
 testPlayingWithSquareEffectsUntilWinner
-	| game player1 player2 players |
-	player1 := Player named: 'Nico'.
-	player2 := Player named: 'Santi'.
-	players := {player1.
-	player2}.
-	game := Game
-		withPlayers: players
+	| tmp1 tmp2 tmp3 tmp4 |
+	tmp2 := Player named: 'Nico'.
+	tmp3 := Player named: 'Santi'.
+	tmp4 := {tmp2.
+	tmp3}.
+	tmp1 := Game
+		withPlayers: tmp4
 		withBoard:
 			(Board
 				withSquareEffects:
@@ -16,55 +16,64 @@ testPlayingWithSquareEffectsUntilWinner
 					SpeedUpSquareEffect new.
 					TimeMachineSquareEffect new.
 					WormHoleSquareEffect new.
-					MoonwalkSquareEffect newWithSquaresToMove: 3.
+					(MoonwalkSquareEffect newWithSquaresToMove: 3).
 					NoSquareEffect new.
 					NoSquareEffect new})
 		withNumberOfLaps: 3
 		withDices:
 			{(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 2 3 2))).
 			(Dice withNumbersFrom: (ReadStream on: #(2 1 3 4 3 6 3 2)))}.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 1.
-	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 1.
-	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 0.
-	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 1.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 1.
-	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 8.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 7.
-	self assert: (game stateOf: player2) laps equals: 2.
-	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 8.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 7.
-	self assert: (game stateOf: player2) laps equals: 2.
-	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 8.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 1.
-	self assert: (game stateOf: player2) laps equals: 3.
-	self assert: game winner == player2
+	self
+		assert: (tmp1 stateOf: tmp2) position == 1;
+		assert: (tmp1 stateOf: tmp2) laps equals: 0;
+		assert: (tmp1 stateOf: tmp3) position == 1;
+		assert: (tmp1 stateOf: tmp3) laps equals: 0.
+	tmp1 giveTurnTo: tmp2.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 2;
+		assert: (tmp1 stateOf: tmp2) laps equals: 0;
+		assert: (tmp1 stateOf: tmp3) position == 1;
+		assert: (tmp1 stateOf: tmp3) laps equals: 0.
+	tmp1 giveTurnTo: tmp3.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 2;
+		assert: (tmp1 stateOf: tmp2) laps equals: 0;
+		assert: (tmp1 stateOf: tmp3) position == 8;
+		assert: (tmp1 stateOf: tmp3) laps equals: 0.
+	tmp1 giveTurnTo: tmp2.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 1;
+		assert: (tmp1 stateOf: tmp2) laps equals: 1;
+		assert: (tmp1 stateOf: tmp3) position == 8;
+		assert: (tmp1 stateOf: tmp3) laps equals: 0.
+	tmp1 giveTurnTo: tmp3.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 1;
+		assert: (tmp1 stateOf: tmp2) laps equals: 1;
+		assert: (tmp1 stateOf: tmp3) position == 8;
+		assert: (tmp1 stateOf: tmp3) laps equals: 1.
+	tmp1 giveTurnTo: tmp2.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 2;
+		assert: (tmp1 stateOf: tmp2) laps equals: 1;
+		assert: (tmp1 stateOf: tmp3) position == 8;
+		assert: (tmp1 stateOf: tmp3) laps equals: 1.
+	tmp1 giveTurnTo: tmp3.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 8;
+		assert: (tmp1 stateOf: tmp2) laps equals: 0;
+		assert: (tmp1 stateOf: tmp3) position == 7;
+		assert: (tmp1 stateOf: tmp3) laps equals: 2.
+	tmp1 giveTurnTo: tmp2.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 8;
+		assert: (tmp1 stateOf: tmp2) laps equals: 0;
+		assert: (tmp1 stateOf: tmp3) position == 7;
+		assert: (tmp1 stateOf: tmp3) laps equals: 2.
+	tmp1 giveTurnTo: tmp3.
+	self
+		assert: (tmp1 stateOf: tmp2) position == 8;
+		assert: (tmp1 stateOf: tmp2) laps equals: 0;
+		assert: (tmp1 stateOf: tmp3) position == 1;
+		assert: (tmp1 stateOf: tmp3) laps equals: 3;
+		assert: tmp1 winner == tmp3

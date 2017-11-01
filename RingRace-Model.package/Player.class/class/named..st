@@ -1,4 +1,3 @@
 instantiation
-named: aName
-	^self new initializeNamed: aName
-	
+named: arg1
+	^ self new initializeNamed: arg1
