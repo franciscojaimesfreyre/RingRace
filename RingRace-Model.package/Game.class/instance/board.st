@@ -1,3 +1,3 @@
 accessing
 board
-	^ board
+	^board

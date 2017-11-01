@@ -1,3 +1,3 @@
 initialization
-initializeWithEffect: aEffect
-	effect := aEffect.
+initializeWithEffect: anEffect
+	effect := anEffect.

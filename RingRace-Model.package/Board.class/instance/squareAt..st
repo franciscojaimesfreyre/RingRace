@@ -1,3 +1,3 @@
 accessing
-squareAt: arg1
-	^ squares at: arg1
+squareAt: aPosition
+	^squares at: aPosition

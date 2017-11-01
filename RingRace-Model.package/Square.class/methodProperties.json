@@ -1,9 +1,10 @@
 {
 	"instance" : {
-		"effect" : "",
-		"initializePositionedIn:withEffect:" : ""
+		"initializeWithEffect:" : "fjf 10/31/2017 18:46",
+		"effect" : "ArielFavioCarrizo 9/27/2017 20:01"
 	},
 	"class" : {
-		"positionedIn:withEffect:" : ""
+		"positionedIn:withEffect:" : "fjf 10/31/2017 19:27:24",
+		"withEffect:" : "fjf 10/31/2017 19:39"
 	}
 }

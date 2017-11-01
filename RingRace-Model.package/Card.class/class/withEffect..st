@@ -1,3 +1,3 @@
-instantiation
-withEffect: aEffect
-	^self new initializeWithEffect: aEffect.
+instantation
+withEffect: anEffect
+	^self new initializeWithEffect: anEffect.

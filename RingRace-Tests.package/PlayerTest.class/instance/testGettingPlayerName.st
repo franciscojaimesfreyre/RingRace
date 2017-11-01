@@ -1,5 +1,5 @@
 tests
 testGettingPlayerName
-	| tmp1 |
-	tmp1 := Player named: 'Nico'.
-	self assert: tmp1 name equals: 'Nico'
+	| player |
+	player := Player named: 'Nico'.
+	self assert: player name equals: 'Nico'

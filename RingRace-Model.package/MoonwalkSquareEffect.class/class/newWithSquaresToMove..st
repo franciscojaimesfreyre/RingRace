@@ -1,3 +1,3 @@
 instance creation
-newWithSquaresToMove: arg1
-	^ self new initializeWithSquaresToMove: arg1
+newWithSquaresToMove: aNumberOfSquares
+	^ self new initializeWithSquaresToMove: aNumberOfSquares

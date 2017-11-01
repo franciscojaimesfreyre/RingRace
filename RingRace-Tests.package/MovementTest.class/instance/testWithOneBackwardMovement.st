@@ -1,19 +1,17 @@
 tests
 testWithOneBackwardMovement
-	| tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 |
-	tmp1 := Player named: 'Fran'.
-	tmp2 := Game
-		withPlayers: {tmp1}
-		withBoard:
-			(Board
-				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
+	| player game movement oldPosition newPosition newPosition2 |
+	player := Player named: 'Fran'.
+	game := Game
+		withPlayers: {player}
+		withBoard: (Board withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
 		withNumberOfLaps: 3
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 2 3)))}.
-	tmp3 := BackwardMovement create.
-	tmp4 := (tmp2 stateOf: tmp1) position.
-	tmp3 move: tmp1 in: tmp2.
-	tmp5 := (tmp2 stateOf: tmp1) position.
-	self assert: tmp5 equals: tmp2 board length.
-	tmp3 move: tmp1 in: tmp2.
-	tmp6 := (tmp2 stateOf: tmp1) position.
-	self assert: tmp6 equals: tmp5 - 1
+	movement := ConsecutiveBackwardMovement create.
+	oldPosition := (game stateOf: player) position.
+	movement move: player in: game.
+	newPosition := (game stateOf: player) position.
+	self assert: newPosition equals: game board length.
+	movement move: player  in: game.
+	newPosition2:= (game stateOf: player ) position.
+	self assert: newPosition2 equals: newPosition - 1

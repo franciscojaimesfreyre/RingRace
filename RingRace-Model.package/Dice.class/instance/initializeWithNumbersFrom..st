@@ -1,3 +1,3 @@
 initialization
-initializeWithNumbersFrom: arg1
-	numbersSource := arg1
+initializeWithNumbersFrom: aNumbersSource
+	numbersSource := aNumbersSource.

@@ -1,3 +1,3 @@
 action
-applyTo: arg1 in: arg2
+applyTo: aPlayer in: aGame 
 	

@@ -1,12 +1,12 @@
 tests
 testPlayingUntilSpeedUpEffect
-	| tmp1 tmp2 tmp3 tmp4 |
-	tmp2 := Player named: 'Nico'.
-	tmp3 := Player named: 'Santi'.
-	tmp4 := {tmp2.
-	tmp3}.
-	tmp1 := Game
-		withPlayers: tmp4
+	| game player1 player2 players |
+	player1 := Player named: 'Nico'.
+	player2 := Player named: 'Santi'.
+	players := {player1.
+	player2}.
+	game := Game
+		withPlayers: players
 		withBoard:
 			(Board
 				withSquareEffects:
@@ -21,18 +21,14 @@ testPlayingUntilSpeedUpEffect
 					NoSquareEffect new})
 		withNumberOfLaps: 2
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1 2)))}.
-	self
-		assert: (tmp1 stateOf: tmp2) position == 1;
-		assert: (tmp1 stateOf: tmp3) position == 1.
-	tmp1 giveTurnTo: tmp2.
-	self
-		assert: (tmp1 stateOf: tmp2) position == 2;
-		assert: (tmp1 stateOf: tmp3) position == 1.
-	tmp1 giveTurnTo: tmp3.
-	self
-		assert: (tmp1 stateOf: tmp2) position == 2;
-		assert: (tmp1 stateOf: tmp3) position == 2.
-	tmp1 giveTurnTo: tmp2.
-	self
-		assert: (tmp1 stateOf: tmp2) position == 8;
-		assert: (tmp1 stateOf: tmp3) position == 2
+	self assert: (game stateOf: player1) position == 1.
+	self assert: (game stateOf: player2) position == 1.
+	game giveTurnTo: player1.
+	self assert: (game stateOf: player1) position == 2.
+	self assert: (game stateOf: player2) position == 1.
+	game giveTurnTo: player2.
+	self assert: (game stateOf: player1) position == 2.
+	self assert: (game stateOf: player2) position == 2.
+	game giveTurnTo: player1.
+	self assert: (game stateOf: player1) position == 8.
+	self assert: (game stateOf: player2) position == 2

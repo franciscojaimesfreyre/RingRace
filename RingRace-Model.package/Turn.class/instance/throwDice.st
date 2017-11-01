@@ -1,8 +1,6 @@
 action
 throwDice
-	| tmp1 |
-	tmp1 := dices sumNumbers: [ :arg1 | arg1 throw ].
-	game move: player forward: tmp1.
-	(game board squareAt: (game stateOf: player) position) effect
-		applyTo: player
-		in: game
+	| numberOfMovements |
+	numberOfMovements := dices sumNumbers: [ :eachDice | eachDice throw ].
+	game move: player forward: numberOfMovements.
+	( ( game board squareAt: ( ( game stateOf: player ) position ) ) effect ) applyTo: player in: game.

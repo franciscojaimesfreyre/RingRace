@@ -12,10 +12,9 @@
 		"numberOfLaps",
 		"winner",
 		"hasEnded",
-		"playerStates",
+		"boardPlayerStates",
 		"dices",
 		"currentPlayerIndex",
-		"lastSquarePassDetector",
 		"savedPlayerStates"
 	],
 	"name" : "Game",

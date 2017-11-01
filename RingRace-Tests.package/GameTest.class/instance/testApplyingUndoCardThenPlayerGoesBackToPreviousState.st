@@ -13,7 +13,7 @@ testApplyingUndoCardThenPlayerGoesBackToPreviousState
 		withNumberOfLaps: 3
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1)))}.
 		
-	aCard := Card withEffect: (UndoCardEffect new).
+	aCard := Card withEffect: UndoCardEffect new.
 	nico give: aCard.
 	
 	self assert: (game stateOf: nico) position equals: 1.
@@ -26,4 +26,4 @@ testApplyingUndoCardThenPlayerGoesBackToPreviousState
 	self assert: (game stateOf: nico) laps equals: 0.
 	nico throws: aCard in: game.
 	self assert: (game stateOf: nico) position equals: 2.
-self assert: (game stateOf: nico) laps equals: 0
+	self assert: (game stateOf: nico) laps equals: 0

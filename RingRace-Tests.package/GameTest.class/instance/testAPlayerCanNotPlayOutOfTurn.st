@@ -1,16 +1,12 @@
 tests
 testAPlayerCanNotPlayOutOfTurn
-	| tmp1 tmp2 tmp3 tmp4 tmp5 |
-	tmp2 := Player named: 'Nico'.
-	tmp3 := Player named: 'Santi'.
-	tmp4 := {tmp2.
-	tmp3}.
-	tmp1 := Game
-		withPlayers: tmp4
-		withBoard:
-			(Board
-				withSquareEffects: (OrderedCollection new: 10 withAll: NoSquareEffect new))
+	| game nico santi |
+	nico := Player named: 'Nico'.
+	santi := Player named: 'Santi'.
+	game := Game
+		withPlayers: {nico. santi}
+		withBoard: (Board withSquareEffects: (OrderedCollection new: 10 withAll: NoSquareEffect new))
 		withNumberOfLaps: 2
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 3 5)))}.
-	tmp1 giveTurnTo: tmp2.
-	self should: [ tmp1 giveTurnTo: tmp2 ] raise: GameException
+	game giveTurnTo: nico.
+	self should: [ game giveTurnTo: nico ] raise: GameException

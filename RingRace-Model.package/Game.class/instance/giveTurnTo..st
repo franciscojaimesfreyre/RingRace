@@ -1,7 +1,7 @@
 action
-giveTurnTo: arg1
+giveTurnTo: aPlayer
 	self
-		ifTurnOf: arg1
-		andGameNotEndedDo: [ self saveStateOf: arg1.
-			arg1 play: (Turn of: self for: arg1 withDices: dices).
-			self advanceTurn ]
+		ifTurnOf: aPlayer
+		andGameNotEndedDo: [ self saveStateOf: aPlayer.
+			aPlayer play: (Turn of: self for: aPlayer withDices: dices).
+			self advanceTurn]

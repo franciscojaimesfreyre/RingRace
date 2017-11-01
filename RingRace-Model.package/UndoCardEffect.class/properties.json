@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "InstantCardEffect",
+	"super" : "Object",
 	"category" : "RingRace-Model-Card",
 	"classinstvars" : [ ],
 	"pools" : [ ],

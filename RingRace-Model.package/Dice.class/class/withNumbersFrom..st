@@ -1,3 +1,3 @@
 as yet unclassified
-withNumbersFrom: arg1
-	^ self new initializeWithNumbersFrom: arg1
+withNumbersFrom: aNumbersSource
+	^self new initializeWithNumbersFrom: aNumbersSource.

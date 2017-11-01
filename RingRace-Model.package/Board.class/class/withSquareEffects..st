@@ -1,3 +1,3 @@
 instantation
-withSquareEffects: arg1
-	^ self new initializeWithSquareEffects: arg1
+withSquareEffects: someSquareEffects
+	^self new initializeWithSquareEffects: someSquareEffects.

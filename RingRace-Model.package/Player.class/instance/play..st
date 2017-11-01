@@ -1,3 +1,3 @@
 action
-play: aTurn
-	aTurn throwDice
+play: aTurn 
+	aTurn throwDice.

@@ -1,3 +1,3 @@
 accessors
 effect
-	^ effect
+	^effect.

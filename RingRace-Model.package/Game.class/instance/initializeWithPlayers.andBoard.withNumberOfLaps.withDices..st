@@ -1,10 +1,10 @@
 initialization
-initializeWithPlayers: arg1 andBoard: arg2 withNumberOfLaps: arg3 withDices: arg4
-	players := OrderedCollection withAll: arg1.
-	board := arg2.
-	playerStates := Dictionary new.
+initializeWithPlayers: somePlayers andBoard: aBoard withNumberOfLaps: aNumberOfLaps withDices: someDices
+	players := OrderedCollection withAll: somePlayers.
+	board := aBoard.
+	boardPlayerStates := RawBoardPlayerStates withPlayers: somePlayers.
 	savedPlayerStates := Dictionary new.
-	dices := arg4.
+	dices := someDices.
 	currentPlayerIndex := 1.
-	numberOfLaps := arg3.
+	numberOfLaps := aNumberOfLaps.
 	hasEnded := false

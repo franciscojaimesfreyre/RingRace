@@ -1,3 +1,3 @@
 action
-give: aCard
+give: aCard 
 	cards add: aCard.

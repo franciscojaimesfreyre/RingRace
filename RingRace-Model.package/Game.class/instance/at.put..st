@@ -1,3 +1,3 @@
 accessing
-at: arg1 put: arg2
-	^ playerStates at: arg1 put: arg2
+at: aPlayer put: aState
+	^(boardPlayerStates alterStateOf: aPlayer with: aState)
