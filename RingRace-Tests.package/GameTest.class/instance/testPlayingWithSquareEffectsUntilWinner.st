@@ -16,13 +16,13 @@ testPlayingWithSquareEffectsUntilWinner
 					SpeedUpSquareEffect new.
 					TimeMachineSquareEffect new.
 					WormHoleSquareEffect new.
-					MoonwalkSquareEffect newWithSquaresToMove: 3.
+					(MoonwalkSquareEffect newWithSquaresToMove: 3).
 					NoSquareEffect new.
 					NoSquareEffect new})
-		withNumberOfLaps: 3
 		withDices:
 			{(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 2 3 2))).
-			(Dice withNumbersFrom: (ReadStream on: #(2 1 3 4 3 6 3 2)))}.
+			(Dice withNumbersFrom: (ReadStream on: #(2 1 3 4 3 6 3 2)))}
+		winningWhen: (ReachedNumberOfLaps reaching: 3).
 	self assert: (game stateOf: player1) position == 1.
 	self assert: (game stateOf: player1) laps equals: 0.
 	self assert: (game stateOf: player2) position == 1.
@@ -65,6 +65,5 @@ testPlayingWithSquareEffectsUntilWinner
 	game giveTurnTo: player2.
 	self assert: (game stateOf: player1) position == 8.
 	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 1.
 	self assert: (game stateOf: player2) laps equals: 3.
 	self assert: game winner == player2

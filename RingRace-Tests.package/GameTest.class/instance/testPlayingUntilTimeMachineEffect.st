@@ -17,8 +17,8 @@ testPlayingUntilTimeMachineEffect
 					NoSquareEffect new.
 					TimeMachineSquareEffect new.
 					NoSquareEffect new})
-		withNumberOfLaps: 2
-		withDices: {(Dice withNumbersFrom: (ReadStream on: #(2 1 3)))}.
+		withDices: {(Dice withNumbersFrom: (ReadStream on: #(2 1 3)))}
+		winningWhen: (ReachedNumberOfLaps reaching: 2).
 	self assert: (game stateOf: nico) position == 1.
 	self assert: (game stateOf: santi) position == 1.
 	game giveTurnTo: nico.

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WinningCondition",
+	"category" : "RingRace-Model-Game",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"numberOfLaps"
+	],
+	"name" : "ReachedNumberOfLaps",
+	"type" : "normal"
+}

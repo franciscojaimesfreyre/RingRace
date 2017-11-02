@@ -9,13 +9,13 @@
 		"players",
 		"board",
 		"playerLaps",
-		"numberOfLaps",
 		"winner",
 		"hasEnded",
 		"playerStates",
 		"dices",
 		"currentPlayerIndex",
-		"savedPlayerStates"
+		"savedPlayerStates",
+		"winnerValidator"
 	],
 	"name" : "Game",
 	"type" : "normal"

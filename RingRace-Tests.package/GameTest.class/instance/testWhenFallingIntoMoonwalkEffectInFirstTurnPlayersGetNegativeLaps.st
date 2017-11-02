@@ -13,8 +13,8 @@ testWhenFallingIntoMoonwalkEffectInFirstTurnPlayersGetNegativeLaps
 					{NoSquareEffect new.
 					(MoonwalkSquareEffect newWithSquaresToMove: 2).
 					NoSquareEffect new})
-		withNumberOfLaps: 2
-		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1)))}.
+		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1)))}
+		winningWhen: (ReachedNumberOfLaps reaching: 2).
 	self assert: (game stateOf: nico) position == 1.
 	self assert: (game stateOf: santi) position == 1.
 	game giveTurnTo: nico.

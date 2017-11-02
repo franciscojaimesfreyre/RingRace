@@ -1,7 +1,8 @@
 {
 	"instance" : {
-		"execute" : "fjf 11/1/2017 17:41",
-		"initializeMoving:into:" : "fjf 11/1/2017 17:40"
+		"execute" : "fjf 11/1/2017 20:58",
+		"initializeMoving:into:" : "fjf 11/1/2017 20:38",
+		"newState:" : "fjf 11/1/2017 20:59"
 	},
 	"class" : {
 		"moving:into:" : "fjf 11/1/2017 17:36"

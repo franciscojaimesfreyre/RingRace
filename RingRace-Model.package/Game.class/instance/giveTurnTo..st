@@ -1,5 +1,6 @@
 action
 giveTurnTo: aPlayer
+	self saveStateOf: aPlayer.
 	self
 		ifTurnOf: aPlayer
 		andGameNotEndedDo: [ self saveStateOf: aPlayer.
