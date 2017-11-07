@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RingRace-Model-Board",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"effects",
+		"probabilities"
+	],
+	"name" : "EffectsProbabilityConfigurator",
+	"type" : "normal"
+}
