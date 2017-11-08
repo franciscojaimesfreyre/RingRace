@@ -1,8 +1,9 @@
 instantation
 withRandomSource: randomSource andSquareEffectsWithProbability: effectToProbability andLength: aLength
 	| hundredSquareEffectsWithProportion squareEffects |
-	hundredSquareEffectsWithProportion := self
-		handleSquareEffectsWithProportion: effectToProbability.
+
+	hundredSquareEffectsWithProportion := effectToProbability 
+		handleSquareEffectsWithProportion.
 	squareEffects := (1 to: aLength)
-		collect: [ hundredSquareEffectsWithProportion at: (randomSource nextInt: 100) ].
+		collect: [:foo | hundredSquareEffectsWithProportion at: ((randomSource next)*100) floor].
 	^ self withSquareEffects: squareEffects

@@ -8,4 +8,5 @@ execute
 		ifTrue: [ position := game board length.
 			laps := laps - 1 ]
 		ifFalse: [ position := position - 1 ].
+
 	game at: player put: (PlayerStateInBoard positionedIn: position withLaps: laps)

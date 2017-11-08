@@ -4,7 +4,7 @@ testAfterPuttingPlayerStateItHasFirstStateAndTheSavedStateOnTheHistory
 	
 	nico := Player named: 'Nico'.
 	
-	aGameStateInBoardStore := GameStateInBoardStore withPlayers: nico.
+	aGameStateInBoardStore := GameStateInBoardStore withPlayers: { nico }.
 	
 	firstPlayerState := PlayerStateInBoard positionedIn: 1 withLaps: 0.
 	secondPlayerState := PlayerStateInBoard positionedIn: 4 withLaps: 2.
