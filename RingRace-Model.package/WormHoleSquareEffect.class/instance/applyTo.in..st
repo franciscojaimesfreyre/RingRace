@@ -1,3 +1,3 @@
 action
 applyTo: aPlayer in: aGame
-	aGame move: aPlayer backward: 4
+	aGame move: aPlayer squares: -4

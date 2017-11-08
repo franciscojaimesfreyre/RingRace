@@ -1,3 +1,0 @@
-instantation
-create
-	^self new.

@@ -1,5 +1,5 @@
 action
-applyTo: aPlayer in: boardPlayerStates 
-	(boardPlayerStates players) do: [ :eachPlayer |
-		boardPlayerStates at: eachPlayer put: ( BoardPlayerState positionedIn: 1 withLaps: 0 ).
+applyTo: aPlayer in: aGame 
+	(aGame players) do: [ :eachPlayer |
+		aGame at: eachPlayer put: ( PlayerStateInBoard positionedIn: 1 withLaps: 0 ).
 	]

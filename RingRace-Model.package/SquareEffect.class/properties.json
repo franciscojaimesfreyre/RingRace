@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "RingRace-Model-Square",
+	"category" : "RingRace-Model-Board",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

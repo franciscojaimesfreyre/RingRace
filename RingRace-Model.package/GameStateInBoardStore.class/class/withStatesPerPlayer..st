@@ -1,0 +1,3 @@
+instantation
+withStatesPerPlayer: someStatesPerPlayer
+	^self new initializeWithStatesPerPlayer: someStatesPerPlayer.

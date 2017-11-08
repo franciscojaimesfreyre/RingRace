@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RingRace-Model-Game-State",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"position",
+		"laps"
+	],
+	"name" : "PlayerStateInBoard",
+	"type" : "normal"
+}

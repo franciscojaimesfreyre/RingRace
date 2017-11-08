@@ -19,8 +19,8 @@ testPlayingUntilSpeedUpEffect
 					NoSquareEffect new.
 					NoSquareEffect new.
 					NoSquareEffect new})
-		withNumberOfLaps: 2
-		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1 2)))}.
+		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1 2)))}
+		winningWhen: (ReachedNumberOfLaps reaching: 2).
 	self assert: (game stateOf: player1) position == 1.
 	self assert: (game stateOf: player2) position == 1.
 	game giveTurnTo: player1.

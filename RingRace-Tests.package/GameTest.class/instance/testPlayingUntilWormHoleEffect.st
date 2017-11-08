@@ -14,8 +14,8 @@ testPlayingUntilWormHoleEffect
 					NoSquareEffect new.
 					NoSquareEffect new.
 					WormHoleSquareEffect new})
-		withNumberOfLaps: 2
-		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1 2)))}.
+		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1 2)))}
+		winningWhen: (ReachedNumberOfLaps reaching: 2).
 	self assert: (game stateOf: nico) position == 1.
 	self assert: (game stateOf: santi) position == 1.
 	game giveTurnTo: nico.

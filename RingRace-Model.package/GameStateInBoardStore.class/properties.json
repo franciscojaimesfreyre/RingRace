@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "RingRace-Model-Game-State",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"playerStatesHistoryPerPlayer"
+	],
+	"name" : "GameStateInBoardStore",
+	"type" : "normal"
+}

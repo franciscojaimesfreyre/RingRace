@@ -1,3 +1,3 @@
 action
 recoverStateOf: player
-	boardPlayerStates alterStateOf: player with: (savedPlayerStates at: player).
+	playerStates at: player put: (savedPlayerStates at: player).
