@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "GameStateInBoard",
+	"instvars" : [
+		"playerStatesHistoryPerPlayer",
+		"gameStates"
+	],
+	"name" : "GameStateContext",
 	"type" : "normal"
 }

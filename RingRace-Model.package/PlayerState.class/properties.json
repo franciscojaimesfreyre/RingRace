@@ -9,6 +9,6 @@
 		"position",
 		"laps"
 	],
-	"name" : "PlayerStateInBoard",
+	"name" : "PlayerState",
 	"type" : "normal"
 }

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "GameStateInBoardStoreTest",
+	"name" : "GameStateContextTest",
 	"type" : "normal"
 }

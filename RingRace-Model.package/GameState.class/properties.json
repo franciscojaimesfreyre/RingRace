@@ -6,8 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"playerStatesHistoryPerPlayer"
+		"playerStates"
 	],
-	"name" : "GameStateInBoardStore",
+	"name" : "GameState",
 	"type" : "normal"
 }

@@ -9,4 +9,4 @@ execute
 			laps := laps - 1 ]
 		ifFalse: [ position := position - 1 ].
 
-	game at: player put: (PlayerStateInBoard positionedIn: position withLaps: laps)
+	game at: player put: (PlayerState positionedIn: position withLaps: laps)
