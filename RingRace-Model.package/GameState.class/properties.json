@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"playerStates"
+		"playerStates",
+		"playerOfCurrentTurn"
 	],
 	"name" : "GameState",
 	"type" : "normal"
