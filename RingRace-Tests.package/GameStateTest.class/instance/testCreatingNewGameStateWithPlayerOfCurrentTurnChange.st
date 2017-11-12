@@ -5,18 +5,18 @@ testCreatingNewGameStateWithPlayerOfCurrentTurnChange
 	claudio := Player named: 'claudio'.
 	aGameState1 := GameState withPlayers: { nico. claudio }.
 	
-	self assert: (aGameState1 stateOf: nico ) position equals: 1.
-	self assert: (aGameState1 stateOf: nico ) laps equals: 0.
-	self assert: (aGameState1 stateOf: claudio ) position equals: 1.
-	self assert: (aGameState1 stateOf: claudio ) laps equals: 0.
+	self assert: (aGameState1 stateOf: nico ) positionInGame positionInBoard equals: 1.
+	self assert: (aGameState1 stateOf: nico ) positionInGame laps equals: 0.
+	self assert: (aGameState1 stateOf: claudio ) positionInGame positionInBoard equals: 1.
+	self assert: (aGameState1 stateOf: claudio ) positionInGame laps equals: 0.
 	
-	self assert: (aGameState1 playerOfCurrentTurn ) equals: nico.
+	self assert: (aGameState1 playerInTurn ) equals: nico.
 	
 	aGameState2 := aGameState1 withNewTurnOf: claudio.
 	
-	self assert: (aGameState2 stateOf: nico ) position equals: 1.
-	self assert: (aGameState2 stateOf: nico ) laps equals: 0.
-	self assert: (aGameState2 stateOf: claudio ) position equals: 1.
-	self assert: (aGameState2 stateOf: claudio ) laps equals: 0.
+	self assert: (aGameState2 stateOf: nico ) positionInGame positionInBoard equals: 1.
+	self assert: (aGameState2 stateOf: nico ) positionInGame laps equals: 0.
+	self assert: (aGameState2 stateOf: claudio ) positionInGame positionInBoard equals: 1.
+	self assert: (aGameState2 stateOf: claudio ) positionInGame laps equals: 0.
 	
-	self assert: (aGameState2 playerOfCurrentTurn ) equals: claudio.
+	self assert: (aGameState2 playerInTurn ) equals: claudio.

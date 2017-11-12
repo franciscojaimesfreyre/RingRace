@@ -8,10 +8,10 @@ testWhenCreatingGameStateStoreItHasTheInitialGameState
 	aGameStateContext := GameStateContext withPlayers: { nico. claudio }.
 	gameState := aGameStateContext currentState.
 	
-	self assert: ( (gameState stateOf: nico) position ) equals: 1.
-	self assert: ( (gameState stateOf: nico) laps ) equals: 0.
+	self assert: ( (gameState stateOf: nico) positionInGame positionInBoard ) equals: 1.
+	self assert: ( (gameState stateOf: nico) positionInGame laps ) equals: 0.
 	
-	self assert: ( (gameState stateOf: claudio) position ) equals: 1.
-	self assert: ( (gameState stateOf: claudio) laps ) equals: 0
+	self assert: ( (gameState stateOf: claudio) positionInGame positionInBoard ) equals: 1.
+	self assert: ( (gameState stateOf: claudio) positionInGame laps ) equals: 0
 	
 	

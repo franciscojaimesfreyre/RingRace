@@ -5,4 +5,4 @@ withNewPlayerState: aPlayerState of: aPlayer
 	newStatesPerPlayer := playerStates clone.
 	newStatesPerPlayer at: aPlayer put: aPlayerState.
 	
-	^self class withPlayerStates: newStatesPerPlayer withCurrentTurnOf: playerOfCurrentTurn.
+	^self class withPlayerStates: newStatesPerPlayer withCurrentTurnOf: playerInTurn.

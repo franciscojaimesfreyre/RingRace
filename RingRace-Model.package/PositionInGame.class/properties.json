@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"playerStates",
-		"playerInTurn"
+		"positionInBoard",
+		"laps"
 	],
-	"name" : "GameState",
+	"name" : "PositionInGame",
 	"type" : "normal"
 }

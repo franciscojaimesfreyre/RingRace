@@ -1,13 +1,13 @@
 {
 	"instance" : {
 		"withNewTurnOf:" : "ArielFavioCarrizo 11/11/2017 19:13",
-		"initializeWithPlayerStates:withCurrentTurnOf:" : "ArielFavioCarrizo 11/11/2017 19:15",
-		"withNewPlayerState:of:" : "ArielFavioCarrizo 11/11/2017 19:15",
-		"playerOfCurrentTurn" : "ArielFavioCarrizo 11/11/2017 18:53",
+		"initializeWithPlayerStates:withCurrentTurnOf:" : "ArielFavioCarrizo 11/12/2017 17:03",
+		"playerInTurn" : "ArielFavioCarrizo 11/12/2017 17:03",
+		"withNewPlayerState:of:" : "ArielFavioCarrizo 11/12/2017 17:03",
 		"stateOf:" : "ArielFavioCarrizo 11/8/2017 21:05"
 	},
 	"class" : {
 		"withPlayerStates:withCurrentTurnOf:" : "ArielFavioCarrizo 11/11/2017 19:15",
-		"withPlayers:" : "ArielFavioCarrizo 11/11/2017 19:15"
+		"withPlayers:" : "ArielFavioCarrizo 11/12/2017 17:06"
 	}
 }

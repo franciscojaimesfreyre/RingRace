@@ -1,0 +1,8 @@
+{
+	"instance" : {
+		"testWhenCreatingAPositionInGameWithNewPositionInBoard" : "ArielFavioCarrizo 11/12/2017 16:46",
+		"testWhenCreatingAPositionInGameItHasTheSamePositionAndTheSameLaps" : "ArielFavioCarrizo 11/12/2017 16:42",
+		"testWhenCreatingAPositionInGameWithNewNumberOfLaps" : "ArielFavioCarrizo 11/12/2017 16:48"
+	},
+	"class" : { }
+}

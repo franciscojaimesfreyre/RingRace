@@ -1,6 +1,6 @@
 {
 	"instance" : {
-		"testPlayerStateEqualComparationIsConsistent" : "ArielFavioCarrizo 11/8/2017 20:44"
+		"testWhenCreatingAPlayerStateItHasTheSamePositionInGame" : "ArielFavioCarrizo 11/12/2017 16:54"
 	},
 	"class" : { }
 }
