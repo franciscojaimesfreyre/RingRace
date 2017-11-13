@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testWithOneForwardMovement" : "fjf 11/1/2017 21:48",
-		"testWithOneBackwardMovement" : "fjf 11/1/2017 21:48",
-		"testWhenPlayerMovesBackwardPositionIsUpdated" : "fjf 11/1/2017 21:48",
-		"testWhenPlayerMovesForwardPositionIsUpdated" : "fjf 11/1/2017 21:48"
+		"testWithOneForwardMovement" : "ArielFavioCarrizo 11/12/2017 22:33",
+		"testWithOneBackwardMovement" : "ArielFavioCarrizo 11/12/2017 22:33",
+		"testWhenPlayerMovesBackwardPositionIsUpdated" : "ArielFavioCarrizo 11/12/2017 22:33",
+		"testWhenPlayerMovesForwardPositionIsUpdated" : "ArielFavioCarrizo 11/12/2017 22:33"
 	},
 	"class" : { }
 }

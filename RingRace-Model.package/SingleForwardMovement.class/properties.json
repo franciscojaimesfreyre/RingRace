@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "TestCase",
-	"category" : "RingRace-Tests-Game-Movement",
+	"super" : "MovementInGame",
+	"category" : "RingRace-Model-Game-Movement",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MovementTest",
+	"name" : "SingleForwardMovement",
 	"type" : "normal"
 }

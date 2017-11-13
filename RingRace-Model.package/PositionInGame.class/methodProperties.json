@@ -1,12 +1,12 @@
 {
 	"instance" : {
-		"withNewPositionInBoard:" : "ArielFavioCarrizo 11/12/2017 16:47",
 		"positionInBoard" : "ArielFavioCarrizo 11/12/2017 16:44",
-		"withNewLaps:" : "ArielFavioCarrizo 11/12/2017 16:49",
 		"laps" : "ArielFavioCarrizo 11/12/2017 16:45",
-		"initializeWithPositionInBoard:withLaps:" : "ArielFavioCarrizo 11/12/2017 16:44"
+		"initializePositionedInSquare:withLaps:" : "ArielFavioCarrizo 11/12/2017 21:48",
+		"positionedInSquare:" : "ArielFavioCarrizo 11/12/2017 21:47",
+		"withLaps:" : "ArielFavioCarrizo 11/12/2017 21:47"
 	},
 	"class" : {
-		"withPositionInBoard:withLaps:" : "ArielFavioCarrizo 11/12/2017 16:43"
+		"positionedInSquare:withLaps:" : "ArielFavioCarrizo 11/12/2017 21:48"
 	}
 }

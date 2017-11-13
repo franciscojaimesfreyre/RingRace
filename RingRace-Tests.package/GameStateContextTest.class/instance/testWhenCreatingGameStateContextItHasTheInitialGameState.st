@@ -1,11 +1,11 @@
 tests
-testWhenCreatingGameStateStoreItHasTheInitialGameState
+testWhenCreatingGameStateContextItHasTheInitialGameState
 	|nico claudio gameState aGameStateContext|
 	
 	nico := Player named: 'Nico'.
 	claudio := Player named: 'Claudio'.
 	
-	aGameStateContext := GameStateContext withPlayers: { nico. claudio }.
+	aGameStateContext := GameStateContext withPlayers: { nico. claudio } in: (self board).
 	gameState := aGameStateContext currentState.
 	
 	self assert: ( (gameState stateOf: nico) positionInGame positionInBoard ) equals: 1.

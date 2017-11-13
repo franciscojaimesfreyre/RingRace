@@ -1,16 +1,14 @@
 tests
 testWithOneForwardMovement
-	| player game movement oldPosition newPosition |
+	| player gameStateContext movement oldPosition newPosition |
 	player := Player named: 'Fran'.
-	game := Game
+	gameStateContext := GameStateContext 
 		withPlayers: {player}
-		withBoard:
+		in:
 			(Board
-				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
-		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 2 3)))}
-		winningWhen: (ReachedNumberOfLaps reaching: 3).
-	movement := ForwardMovement moving: player into: game.
-	oldPosition := (game stateOf: player) position.
+				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new)).
+	movement := SingleForwardMovement moving: player into: gameStateContext.
+	oldPosition := (gameStateContext currentState stateOf: player) positionInBoard.
 	movement execute.
-	newPosition := (game stateOf: player) position.
+	newPosition := (gameStateContext currentState stateOf: player) positionInBoard.
 	self assert: newPosition equals: oldPosition + 1

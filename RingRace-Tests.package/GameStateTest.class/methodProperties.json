@@ -2,7 +2,7 @@
 	"instance" : {
 		"testCreatingNewGameStateWithPlayerOfCurrentTurnChange" : "ArielFavioCarrizo 11/12/2017 17:10",
 		"testAfterCreatingGameStateItHasTheInitialPlayersStates" : "ArielFavioCarrizo 11/12/2017 17:09",
-		"testCreatingNewGameStateWithPlayerStateChange" : "ArielFavioCarrizo 11/12/2017 17:12",
+		"testCreatingNewGameStateWithPlayerStateChange" : "ArielFavioCarrizo 11/12/2017 21:47",
 		"testAfterCreatingGameStateThePlayerTurnIsOwnedByTheFirstPlayer" : "ArielFavioCarrizo 11/12/2017 17:02"
 	},
 	"class" : { }

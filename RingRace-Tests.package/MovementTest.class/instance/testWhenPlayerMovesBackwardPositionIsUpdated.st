@@ -9,7 +9,7 @@ testWhenPlayerMovesBackwardPositionIsUpdated
 				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 2 3)))}
 		winningWhen: (ReachedNumberOfLaps reaching: 3).
-	movement := BackwardMovement moving: player into: game.
+	movement := SingleBackwardMovement moving: player into: game.
 	oldPosition := (game stateOf: player) position.
 	movement execute.
 	newPosition := (game stateOf: player) position.

@@ -1,10 +1,12 @@
 {
 	"instance" : {
+		"initializeWithPlayers:in:" : "ArielFavioCarrizo 11/12/2017 21:51",
+		"newStateFrom:" : "ArielFavioCarrizo 11/12/2017 22:17",
 		"historyOf:" : "ArielFavioCarrizo 11/8/2017 21:11",
-		"currentState" : "ArielFavioCarrizo 11/8/2017 21:32",
-		"initializeWithPlayers:" : "ArielFavioCarrizo 11/8/2017 21:31"
+		"board" : "ArielFavioCarrizo 11/12/2017 22:16",
+		"currentState" : "ArielFavioCarrizo 11/8/2017 21:32"
 	},
 	"class" : {
-		"withPlayers:" : "ArielFavioCarrizo 11/8/2017 21:31"
+		"withPlayers:in:" : "ArielFavioCarrizo 11/12/2017 21:52"
 	}
 }

@@ -1,8 +1,12 @@
 {
 	"instance" : {
 		"withNewPositionInGame:" : "ArielFavioCarrizo 11/12/2017 17:39",
-		"positionInGame" : "ArielFavioCarrizo 11/12/2017 16:55",
-		"initializePositionInGame:" : "ArielFavioCarrizo 11/12/2017 16:55"
+		"initializePositionInGame:" : "ArielFavioCarrizo 11/12/2017 16:55",
+		"positionInBoard" : "ArielFavioCarrizo 11/12/2017 21:19",
+		"laps" : "ArielFavioCarrizo 11/12/2017 21:19",
+		"withLaps:" : "ArielFavioCarrizo 11/12/2017 21:44",
+		"positionedInSquare:" : "ArielFavioCarrizo 11/12/2017 21:43",
+		"positionInGame" : "ArielFavioCarrizo 11/12/2017 16:55"
 	},
 	"class" : {
 		"withPositionInGame:" : "ArielFavioCarrizo 11/12/2017 16:54"

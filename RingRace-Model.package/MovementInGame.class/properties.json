@@ -1,17 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "RingRace-Model-Game",
-	"classinstvars" : [
-		"player",
-		"game"
-	],
+	"category" : "RingRace-Model-Game-Movement",
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"player",
-		"game"
+		"gameStateContext"
 	],
-	"name" : "BackwardMovement",
+	"name" : "MovementInGame",
 	"type" : "normal"
 }

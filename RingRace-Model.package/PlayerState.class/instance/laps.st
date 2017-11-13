@@ -1,0 +1,3 @@
+accessing
+laps
+	^ positionInGame laps
