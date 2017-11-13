@@ -9,6 +9,6 @@ testWhenChangingGameStateItPreservesTheHistoryAndHasTheNewState
 	
 	nicoState := ( aGameStateContext currentState stateOf: nico ).
 	newGameState := aGameStateContext currentState withNewPlayerState: ( nicoState positionedInSquare: 3 ) of: nico.
-	aGameStateContext newStateFrom: newGameState.
+	aGameStateContext newState: newGameState.
 	
 	self assert: ( aGameStateContext currentState ) equals: newGameState.

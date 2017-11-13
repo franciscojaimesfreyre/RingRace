@@ -1,3 +1,3 @@
 action
-newStateFrom: aGameState 
+newState: aGameState 
 	gameStates add: aGameState.

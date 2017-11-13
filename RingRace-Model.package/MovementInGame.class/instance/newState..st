@@ -1,3 +1,3 @@
 execute
-newStateFrom: aPlayerState
+newState: aPlayerState
 	^aPlayerState withNewPositionInGame: ( self newPositionInGameFrom: ( aPlayerState positionInGame ) )
