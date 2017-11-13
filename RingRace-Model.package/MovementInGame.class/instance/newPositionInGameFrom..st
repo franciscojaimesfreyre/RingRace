@@ -1,0 +1,3 @@
+execute
+newPositionInGameFrom: aPositionInGame
+	self subclassResponsibility.

@@ -1,3 +1,3 @@
 execute
-newStateFrom: aState
-	self subclassResponsibility.
+newStateFrom: aPlayerState
+	^aPlayerState withNewPositionInGame: ( self newPositionInGameFrom: ( aPlayerState positionInGame ) )

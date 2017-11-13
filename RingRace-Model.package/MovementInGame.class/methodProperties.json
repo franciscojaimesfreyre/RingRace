@@ -1,8 +1,9 @@
 {
 	"instance" : {
-		"execute" : "ArielFavioCarrizo 11/12/2017 22:29",
-		"initializeMoving:into:" : "ArielFavioCarrizo 11/12/2017 22:26",
-		"newStateFrom:" : "ArielFavioCarrizo 11/12/2017 22:21"
+		"newStateFrom:" : "ArielFavioCarrizo 11/12/2017 23:49",
+		"times:" : "ArielFavioCarrizo 11/13/2017 00:38",
+		"newPositionInGameFrom:" : "ArielFavioCarrizo 11/12/2017 23:44",
+		"initializeInBoard:" : "ArielFavioCarrizo 11/13/2017 00:00"
 	},
 	"class" : { }
 }

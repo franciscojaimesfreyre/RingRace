@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"testWithOneForwardMovement" : "ArielFavioCarrizo 11/12/2017 22:33",
-		"testWithOneBackwardMovement" : "ArielFavioCarrizo 11/12/2017 22:33",
-		"testWhenPlayerMovesBackwardPositionIsUpdated" : "ArielFavioCarrizo 11/12/2017 22:33",
-		"testWhenPlayerMovesForwardPositionIsUpdated" : "ArielFavioCarrizo 11/12/2017 22:33"
+		"testNewPositionWithSingleForwardMovementIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:16",
+		"testNewPositionWithSingleBackwardMovementIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:15",
+		"testNewPositionWithTwoChainedForwardMovementsIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:22",
+		"testNewPositionWithMultipleForwardMovementsIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:28"
 	},
 	"class" : { }
 }

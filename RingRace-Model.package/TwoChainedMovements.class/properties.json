@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "MovementInGame",
 	"category" : "RingRace-Model-Game-Movement",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"player",
-		"gameStateContext",
-		"board"
+		"firstMovement",
+		"secondMovement"
 	],
-	"name" : "MovementInGame",
+	"name" : "TwoChainedMovements",
 	"type" : "normal"
 }
