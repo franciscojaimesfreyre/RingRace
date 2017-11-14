@@ -1,8 +1,6 @@
 {
 	"instance" : {
-		"newPositionInGameFrom:" : "ArielFavioCarrizo 11/13/2017 00:01"
+		"newPositionInGameFrom:withBoard:" : "ArielFavioCarrizo 11/13/2017 21:02"
 	},
-	"class" : {
-		"inBoard:" : "ArielFavioCarrizo 11/13/2017 00:03"
-	}
+	"class" : { }
 }

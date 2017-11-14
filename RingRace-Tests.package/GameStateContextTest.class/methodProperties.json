@@ -1,7 +1,7 @@
 {
 	"instance" : {
-		"testWhenCreatingGameStateContextItHasTheInitialGameState" : "ArielFavioCarrizo 11/12/2017 21:53",
-		"testWhenChangingGameStateItPreservesTheHistoryAndHasTheNewState" : "ArielFavioCarrizo 11/13/2017 01:01",
+		"testWhenCreatingGameStateContextItHasTheInitialGameState" : "ArielFavioCarrizo 11/13/2017 19:25",
+		"testWhenChangingGameStateItPreservesTheHistoryAndHasTheNewState" : "ArielFavioCarrizo 11/13/2017 20:53",
 		"board" : "ArielFavioCarrizo 11/12/2017 21:52"
 	},
 	"class" : { }

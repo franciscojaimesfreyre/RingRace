@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MovementInGame",
+	"category" : "RingRace-Model-Game-Movement",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NoMovement",
+	"type" : "normal"
+}

@@ -19,14 +19,14 @@ testPlayingUntilTimeMachineEffect
 					NoSquareEffect new})
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(2 1 3)))}
 		winningWhen: (ReachedNumberOfLaps reaching: 2).
-	self assert: (game stateOf: nico) position == 1.
-	self assert: (game stateOf: santi) position == 1.
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 1.
 	game giveTurnTo: nico.
-	self assert: (game stateOf: nico) position == 3.
-	self assert: (game stateOf: santi) position == 1.
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 3.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 1.
 	game giveTurnTo: santi.
-	self assert: (game stateOf: nico) position == 3.
-	self assert: (game stateOf: santi) position == 2.
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 3.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 2.
 	game giveTurnTo: nico.
-	self assert: (game stateOf: nico) position == 3.
-	self assert: (game stateOf: santi) position == 2
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 3.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 2

@@ -1,6 +1,9 @@
 action
 advanceTurn
-
-currentPlayerIndex = players size
-				ifTrue: [ currentPlayerIndex := 1 ]
-				ifFalse: [ currentPlayerIndex := currentPlayerIndex + 1 ] 
+	currentPlayerIndex := currentPlayerIndex = players size
+		ifTrue: [ 1 ]
+		ifFalse: [ currentPlayerIndex + 1 ].
+	gameStateContext
+		newState:
+			(gameStateContext currentState
+				withNewTurnOf: (players at: currentPlayerIndex))

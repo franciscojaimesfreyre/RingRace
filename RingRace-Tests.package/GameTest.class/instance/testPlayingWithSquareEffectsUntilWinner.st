@@ -23,47 +23,47 @@ testPlayingWithSquareEffectsUntilWinner
 			{(Dice withNumbersFrom: (ReadStream on: #(3 2 5 1 2 2 3 2))).
 			(Dice withNumbersFrom: (ReadStream on: #(2 1 3 4 3 6 3 2)))}
 		winningWhen: (ReachedNumberOfLaps reaching: 3).
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 1.
-	self assert: (game stateOf: player2) laps equals: 0.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: player1) positionInGame laps equals: 0.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: player2) positionInGame laps equals: 0.
 	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 1.
-	self assert: (game stateOf: player2) laps equals: 0.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 2.
+	self assert: (game stateOf: player1) positionInGame laps equals: 0.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: player2) positionInGame laps equals: 0.
 	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 0.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 2.
+	self assert: (game stateOf: player1) positionInGame laps equals: 0.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 8.
+	self assert: (game stateOf: player2) positionInGame laps equals: 0.
 	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 0.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: player1) positionInGame laps equals: 1.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 8.
+	self assert: (game stateOf: player2) positionInGame laps equals: 0.
 	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 1.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 1.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: player1) positionInGame laps equals: 1.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 8.
+	self assert: (game stateOf: player2) positionInGame laps equals: 1.
 	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 2.
-	self assert: (game stateOf: player1) laps equals: 1.
-	self assert: (game stateOf: player2) position == 8.
-	self assert: (game stateOf: player2) laps equals: 1.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 2.
+	self assert: (game stateOf: player1) positionInGame laps equals: 1.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 8.
+	self assert: (game stateOf: player2) positionInGame laps equals: 1.
 	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 8.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 7.
-	self assert: (game stateOf: player2) laps equals: 2.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 8.
+	self assert: (game stateOf: player1) positionInGame laps equals: 0.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 7.
+	self assert: (game stateOf: player2) positionInGame laps equals: 2.
 	game giveTurnTo: player1.
-	self assert: (game stateOf: player1) position == 8.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) position == 7.
-	self assert: (game stateOf: player2) laps equals: 2.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 8.
+	self assert: (game stateOf: player1) positionInGame laps equals: 0.
+	self assert: (game stateOf: player2) positionInGame positionInBoard == 7.
+	self assert: (game stateOf: player2) positionInGame laps equals: 2.
 	game giveTurnTo: player2.
-	self assert: (game stateOf: player1) position == 8.
-	self assert: (game stateOf: player1) laps equals: 0.
-	self assert: (game stateOf: player2) laps equals: 3.
+	self assert: (game stateOf: player1) positionInGame positionInBoard == 8.
+	self assert: (game stateOf: player1) positionInGame laps equals: 0.
+	self assert: (game stateOf: player2) positionInGame laps equals: 3.
 	self assert: game winner == player2

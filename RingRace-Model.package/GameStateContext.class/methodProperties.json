@@ -1,12 +1,12 @@
 {
 	"instance" : {
-		"initializeWithPlayers:in:" : "ArielFavioCarrizo 11/12/2017 21:51",
-		"newState:" : "ArielFavioCarrizo 11/13/2017 01:01",
-		"historyOf:" : "ArielFavioCarrizo 11/8/2017 21:11",
+		"newState:" : "ArielFavioCarrizo 11/14/2017 00:22",
+		"initializeWithPlayers:in:andWhenStateIsUpdatedDo:" : "ArielFavioCarrizo 11/14/2017 00:18",
 		"board" : "ArielFavioCarrizo 11/12/2017 22:16",
+		"firstStatePerTurnsOf:" : "ArielFavioCarrizo 11/14/2017 01:34",
 		"currentState" : "ArielFavioCarrizo 11/8/2017 21:32"
 	},
 	"class" : {
-		"withPlayers:in:" : "ArielFavioCarrizo 11/12/2017 21:52"
+		"withPlayers:in:andWhenStateIsUpdatedDo:" : "ArielFavioCarrizo 11/13/2017 19:08"
 	}
 }

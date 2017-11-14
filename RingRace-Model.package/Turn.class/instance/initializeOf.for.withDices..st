@@ -1,5 +1,5 @@
 initialization
-initializeOf: aGame for: aPlayer withDices: someDices
-	game := aGame.
+initializeOf: aGameStateContext for: aPlayer withDices: someDices
+	gameStateContext := aGameStateContext.
 	player := aPlayer.
 	dices := someDices.

@@ -1,3 +1,3 @@
 action
-applyTo: aPlayer in: aGame
+applyTo: aPlayer in: aGameStateContext
 	self subclassResponsibility.

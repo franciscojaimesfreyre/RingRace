@@ -1,3 +1,3 @@
 action
-applyTo: aPlayer in: aGame 
-	aGame move: aPlayer squares: 4
+applyTo: aPlayer in: aGameStateContext
+	( SingleForwardMovement new times: 4 ) move: aPlayer in: aGameStateContext.

@@ -1,3 +1,4 @@
 action
 newState: aGameState 
-	gameStates add: aGameState.
+	gameStates addLast: aGameState.
+	notifyStateUpdateBlock value.

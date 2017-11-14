@@ -1,9 +1,10 @@
 {
 	"instance" : {
-		"withNewTurnOf:" : "ArielFavioCarrizo 11/11/2017 19:13",
+		"players" : "ArielFavioCarrizo 11/13/2017 20:55",
 		"initializeWithPlayerStates:withCurrentTurnOf:" : "ArielFavioCarrizo 11/12/2017 17:03",
+		"withNewTurnOf:" : "ArielFavioCarrizo 11/14/2017 02:21",
+		"withNewPlayerState:of:" : "ArielFavioCarrizo 11/14/2017 02:22",
 		"playerInTurn" : "ArielFavioCarrizo 11/12/2017 17:03",
-		"withNewPlayerState:of:" : "ArielFavioCarrizo 11/12/2017 17:03",
 		"stateOf:" : "ArielFavioCarrizo 11/8/2017 21:05"
 	},
 	"class" : {

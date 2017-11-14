@@ -1,0 +1,3 @@
+instantiation
+withFirstMovement: theFirstMovement andSecondMovement: theSecondMovement
+	^super new initializeWithFirstMovement: theFirstMovement andSecondMovement: theSecondMovement.

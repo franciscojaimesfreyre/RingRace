@@ -5,11 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"player",
-		"gameStateContext",
-		"board"
-	],
+	"instvars" : [ ],
 	"name" : "MovementInGame",
 	"type" : "normal"
 }

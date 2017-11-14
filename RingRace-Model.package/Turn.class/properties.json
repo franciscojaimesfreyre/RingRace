@@ -6,9 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"game",
 		"player",
-		"dices"
+		"dices",
+		"gameStateContext"
 	],
 	"name" : "Turn",
 	"type" : "normal"

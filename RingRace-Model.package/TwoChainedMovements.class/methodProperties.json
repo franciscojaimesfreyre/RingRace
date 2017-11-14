@@ -1,9 +1,10 @@
 {
 	"instance" : {
-		"newPositionInGameFrom:" : "ArielFavioCarrizo 11/13/2017 00:27",
+		"newPositionInGameFrom:withBoard:" : "ArielFavioCarrizo 11/13/2017 21:14",
 		"initializeWithFirstMovement:andSecondMovement:" : "ArielFavioCarrizo 11/13/2017 00:25"
 	},
 	"class" : {
-		"withFirstMovement:andSecondMovement:in:" : "ArielFavioCarrizo 11/13/2017 00:26"
+		"new" : "ArielFavioCarrizo 11/13/2017 21:10",
+		"withFirstMovement:andSecondMovement:" : "ArielFavioCarrizo 11/13/2017 21:13"
 	}
 }

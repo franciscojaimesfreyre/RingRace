@@ -16,14 +16,14 @@ testPlayingUntilWormHoleEffect
 					WormHoleSquareEffect new})
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 1 2)))}
 		winningWhen: (ReachedNumberOfLaps reaching: 2).
-	self assert: (game stateOf: nico) position == 1.
-	self assert: (game stateOf: santi) position == 1.
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 1.
 	game giveTurnTo: nico.
-	self assert: (game stateOf: nico) position == 2.
-	self assert: (game stateOf: santi) position == 1.
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 2.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 1.
 	game giveTurnTo: santi.
-	self assert: (game stateOf: nico) position == 2.
-	self assert: (game stateOf: santi) position == 2.
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 2.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 2.
 	game giveTurnTo: nico.
-	self assert: (game stateOf: nico) position == 4.
-	self assert: (game stateOf: santi) position == 2
+	self assert: (game stateOf: nico) positionInGame positionInBoard == 4.
+	self assert: (game stateOf: santi) positionInGame positionInBoard == 2

@@ -1,5 +1,9 @@
 action
-applyTo: aPlayer in: aGame 
-	(aGame players) do: [ :eachPlayer |
-		aGame at: eachPlayer put: ( PlayerState positionedIn: 1 withLaps: 0 ).
-	]
+applyTo: aPlayer in: aGameStateContext
+	|gameState|
+	gameState := aGameStateContext currentState.
+	(gameState players) do: [ :eachPlayer |
+		gameState := gameState withNewPlayerState: ( ( gameState stateOf: eachPlayer ) withNewPositionInGame: ( PositionInGame positionedInSquare: 1 withLaps: 0 ) ) of: eachPlayer.
+	].
+
+	aGameStateContext newState: gameState.

@@ -1,3 +1,3 @@
 instantiation
-of: aGame for: aPlayer withDices: someDices
-	^self new initializeOf: aGame for: aPlayer withDices: someDices.
+of: aGameStateContext for: aPlayer withDices: someDices
+	^self new initializeOf: aGameStateContext for: aPlayer withDices: someDices.

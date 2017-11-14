@@ -1,3 +1,0 @@
-accessing
-positionInBoard
-	^ positionInGame positionInBoard

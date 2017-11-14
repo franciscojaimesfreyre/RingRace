@@ -1,3 +1,3 @@
 as yet unclassified
 checkingFor: aPlayerState
-	^ aPlayerState laps >= numberOfLaps
+	^ aPlayerState positionInGame laps >= numberOfLaps

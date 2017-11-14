@@ -1,22 +1,21 @@
 tests
 testWhenGivingTurnToAPlayerItChangesState
-	| game nico turn dices |
+	| gameStateContext nico turn dices |
 	nico := Player named: 'Nico'.
 	dices := {(Dice withNumbersFrom: (ReadStream on: #(1 2 3 4)))}.
-	game := Game
+	gameStateContext := GameStateContext 
 		withPlayers: {nico}
-		withBoard:
+		in:
 			(Board
 				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
-		withDices: dices
-		winningWhen: (ReachedNumberOfLaps reaching: 3).
-	self assert: (game stateOf: nico) position equals: 1.
-	turn := Turn of: game for: nico withDices: dices.
+		andWhenStateIsUpdatedDo: [].
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 1.
+	turn := Turn of: gameStateContext for: nico withDices: dices.
 	nico play: turn.
-	self assert: (game stateOf: nico) position equals: 2.
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 2.
 	nico play: turn.
-	self assert: (game stateOf: nico) position equals: 4.
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 4.
 	nico play: turn.
-	self assert: (game stateOf: nico) position equals: 7.
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 7.
 	nico play: turn.
-	self assert: (game stateOf: nico) position equals: 11
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 11

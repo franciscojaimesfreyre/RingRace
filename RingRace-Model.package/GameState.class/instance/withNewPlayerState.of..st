@@ -2,7 +2,7 @@ action
 withNewPlayerState: aPlayerState of: aPlayer
 
 	| newStatesPerPlayer |
-	newStatesPerPlayer := playerStates clone.
+	newStatesPerPlayer := Dictionary withAll: playerStates.
 	newStatesPerPlayer at: aPlayer put: aPlayerState.
 	
 	^self class withPlayerStates: newStatesPerPlayer withCurrentTurnOf: playerInTurn.

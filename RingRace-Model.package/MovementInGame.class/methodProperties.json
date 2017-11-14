@@ -1,10 +1,12 @@
 {
 	"instance" : {
-		"initializeInBoard:" : "ArielFavioCarrizo 11/13/2017 00:00",
-		"newPositionInGameFrom:" : "ArielFavioCarrizo 11/12/2017 23:44",
+		"times:" : "ArielFavioCarrizo 11/13/2017 21:12",
 		"newState:" : "ArielFavioCarrizo 11/13/2017 01:01",
-		"move:in:" : "ArielFavioCarrizo 11/13/2017 01:01",
-		"times:" : "ArielFavioCarrizo 11/13/2017 00:50"
+		"move:in:" : "ArielFavioCarrizo 11/13/2017 21:11",
+		"newPositionInGameFrom:withBoard:" : "ArielFavioCarrizo 11/13/2017 21:02",
+		"newPlayerStateFrom:withBoard:" : "ArielFavioCarrizo 11/13/2017 21:11"
 	},
-	"class" : { }
+	"class" : {
+		"advancingWithSquares:" : "ArielFavioCarrizo 11/13/2017 21:12"
+	}
 }

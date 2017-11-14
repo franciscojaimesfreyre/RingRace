@@ -1,9 +1,11 @@
 {
 	"instance" : {
-		"testNewPositionWithSingleForwardMovementIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:16",
-		"testNewPositionWithSingleBackwardMovementIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:15",
-		"testNewPositionWithTwoChainedForwardMovementsIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:22",
-		"testNewPositionWithMultipleForwardMovementsIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 00:28"
+		"testNewPositionWithSingleForwardMovementIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 21:17",
+		"testNewPositionWithNoMovementIsTheSame" : "ArielFavioCarrizo 11/13/2017 21:16",
+		"testNewPositionWithMultipleForwardMovementsIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 21:15",
+		"testNewPositionWithSingleBackwardMovementIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 21:17",
+		"testNewPositionWithCreatedMovementWithANumberOfSquareToAdvanceIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 21:13",
+		"testNewPositionWithTwoChainedForwardMovementsIsCorrectlyCalculated" : "ArielFavioCarrizo 11/13/2017 21:18"
 	},
 	"class" : { }
 }
