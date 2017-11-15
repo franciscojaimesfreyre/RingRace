@@ -1,4 +1,4 @@
 instance initialization
 initializePositionedInSquare: aPositionInBoard withLaps: aNumberOfLaps
-	positionInBoard := aPositionInBoard.
+	squareNumber := aPositionInBoard.
 	laps := aNumberOfLaps.

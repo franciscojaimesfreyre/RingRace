@@ -9,13 +9,13 @@ testWhenGivingTurnToAPlayerItChangesState
 			(Board
 				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new))
 		andWhenStateIsUpdatedDo: [].
-	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 1.
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame squareNumber equals: 1.
 	turn := Turn of: gameStateContext for: nico withDices: dices.
 	nico play: turn.
-	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 2.
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame squareNumber equals: 2.
 	nico play: turn.
-	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 4.
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame squareNumber equals: 4.
 	nico play: turn.
-	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 7.
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame squareNumber equals: 7.
 	nico play: turn.
-	self assert: (gameStateContext currentState stateOf: nico) positionInGame positionInBoard equals: 11
+	self assert: (gameStateContext currentState stateOf: nico) positionInGame squareNumber equals: 11

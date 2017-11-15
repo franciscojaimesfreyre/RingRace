@@ -1,0 +1,3 @@
+accessing
+undoLastEffectBlock
+	^undoLastEffectBlock.

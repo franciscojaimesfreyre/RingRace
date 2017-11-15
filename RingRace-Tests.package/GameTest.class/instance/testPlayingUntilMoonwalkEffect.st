@@ -17,15 +17,15 @@ testPlayingUntilMoonwalkEffect
 					NoSquareEffect new})
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1 2 2)))}
 		winningWhen: (ReachedNumberOfLaps reaching: 2).
-	self assert: (game stateOf: nico) positionInGame positionInBoard == 1.
-	self assert: (game stateOf: santi) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: nico) positionInGame squareNumber == 1.
+	self assert: (game stateOf: santi) positionInGame squareNumber == 1.
 	game giveTurnTo: nico.
-	self assert: (game stateOf: nico) positionInGame positionInBoard == 2.
-	self assert: (game stateOf: santi) positionInGame positionInBoard == 1.
+	self assert: (game stateOf: nico) positionInGame squareNumber == 2.
+	self assert: (game stateOf: santi) positionInGame squareNumber == 1.
 	game giveTurnTo: santi.
-	self assert: (game stateOf: nico) positionInGame positionInBoard == 2.
-	self assert: (game stateOf: santi) positionInGame positionInBoard == 3.
+	self assert: (game stateOf: nico) positionInGame squareNumber == 2.
+	self assert: (game stateOf: santi) positionInGame squareNumber == 3.
 	game giveTurnTo: nico.
 	"Nico falls in position 4 which has a MoonwalkEffect, so Santi moves back 2 squares as all the other players if there were any"
-	self assert: (game stateOf: nico) positionInGame positionInBoard == 4.
-	self assert: (game stateOf: santi) positionInGame positionInBoard == 1
+	self assert: (game stateOf: nico) positionInGame squareNumber == 4.
+	self assert: (game stateOf: santi) positionInGame squareNumber == 1

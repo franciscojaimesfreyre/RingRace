@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CardEffect",
+	"category" : "RingRace-Model-Game-Cards",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SobrecargaEffect",
+	"type" : "normal"
+}

@@ -1,6 +1,8 @@
 {
 	"instance" : {
-		"newState:" : "ArielFavioCarrizo 11/14/2017 00:22",
+		"newTransformedLastState:" : "fjf 11/14/2017 19:46",
+		"newState:" : "fjf 11/14/2017 18:25",
+		"createUndoPositionChangeBlockFor:" : "fjf 11/14/2017 19:52",
 		"initializeWithPlayers:in:andWhenStateIsUpdatedDo:" : "ArielFavioCarrizo 11/14/2017 00:18",
 		"board" : "ArielFavioCarrizo 11/12/2017 22:16",
 		"firstStatePerTurnsOf:" : "ArielFavioCarrizo 11/14/2017 01:34",

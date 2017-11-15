@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"positionInBoard" : "ArielFavioCarrizo 11/12/2017 16:44",
+		"withLaps:" : "fjf 11/14/2017 20:50",
 		"laps" : "ArielFavioCarrizo 11/12/2017 16:45",
-		"initializePositionedInSquare:withLaps:" : "ArielFavioCarrizo 11/12/2017 21:48",
+		"initializePositionedInSquare:withLaps:" : "fjf 11/14/2017 20:50",
 		"positionedInSquare:" : "ArielFavioCarrizo 11/12/2017 21:47",
-		"withLaps:" : "ArielFavioCarrizo 11/12/2017 21:47"
+		"squareNumber" : "fjf 11/14/2017 20:50"
 	},
 	"class" : {
 		"positionedInSquare:withLaps:" : "ArielFavioCarrizo 11/12/2017 21:48"

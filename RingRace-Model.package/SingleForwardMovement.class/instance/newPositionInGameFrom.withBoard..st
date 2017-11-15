@@ -1,5 +1,5 @@
 action
 newPositionInGameFrom: aPositionInGame withBoard: aBoard
-	^aPositionInGame positionInBoard == ( aBoard length ) 
+	^aPositionInGame squareNumber == ( aBoard length ) 
 		ifTrue: [ PositionInGame positionedInSquare: 1 withLaps: ( aPositionInGame laps + 1 ) ]
-		ifFalse: [ PositionInGame positionedInSquare: ( aPositionInGame positionInBoard + 1 ) withLaps: ( aPositionInGame laps ) ]
+		ifFalse: [ PositionInGame positionedInSquare: ( aPositionInGame squareNumber + 1 ) withLaps: ( aPositionInGame laps ) ]

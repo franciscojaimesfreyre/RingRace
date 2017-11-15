@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Card",
+	"category" : "RingRace-Model-Game-Cards",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"effect"
+	],
+	"name" : "PermanentCard",
+	"type" : "normal"
+}

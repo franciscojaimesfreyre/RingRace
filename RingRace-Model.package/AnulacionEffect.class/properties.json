@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "CardEffect",
+	"category" : "RingRace-Model-Game-Cards",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cardToRemove"
+	],
+	"name" : "AnulacionEffect",
+	"type" : "normal"
+}
