@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "InstantaneousEffect",
-	"category" : "RingRace-Model-Board",
+	"super" : "Object",
+	"category" : "RingRace-Model-Game",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SquareEffect",
+	"name" : "InstantaneousEffect",
 	"type" : "normal"
 }

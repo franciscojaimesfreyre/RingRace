@@ -1,3 +1,3 @@
 action
 applyTo: aPlayer in: aGameStateContext
-	( SingleBackwardMovement new times: 4 ) move: aPlayer in: aGameStateContext.
+	self applyMovement: (SingleBackwardMovement new times: 4) to: {aPlayer} in: aGameStateContext

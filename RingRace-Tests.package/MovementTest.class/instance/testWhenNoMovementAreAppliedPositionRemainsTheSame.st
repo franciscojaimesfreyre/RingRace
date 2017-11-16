@@ -1,5 +1,5 @@
 tests
-testNewPositionWithNoMovementIsTheSame
+testWhenNoMovementAreAppliedPositionRemainsTheSame
 	|board movement oldPosition|
 	
 	board := Board

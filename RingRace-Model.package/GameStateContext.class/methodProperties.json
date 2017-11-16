@@ -1,12 +1,12 @@
 {
 	"instance" : {
-		"newTransformedLastState:" : "fjf 11/14/2017 19:46",
+		"lastGameStateBeforeChangesInLastTurnOf:" : "fjf 11/15/2017 20:12",
 		"newState:" : "fjf 11/14/2017 18:25",
-		"createUndoPositionChangeBlockFor:" : "fjf 11/14/2017 19:52",
+		"createUndoPositionChangeBlockFor:" : "fjf 11/15/2017 20:14",
 		"initializeWithPlayers:in:andWhenStateIsUpdatedDo:" : "ArielFavioCarrizo 11/14/2017 00:18",
 		"board" : "ArielFavioCarrizo 11/12/2017 22:16",
-		"firstStatePerTurnsOf:" : "ArielFavioCarrizo 11/14/2017 01:34",
-		"currentState" : "ArielFavioCarrizo 11/8/2017 21:32"
+		"currentState" : "ArielFavioCarrizo 11/8/2017 21:32",
+		"newTransformedLastState:" : "fjf 11/14/2017 19:46"
 	},
 	"class" : {
 		"withPlayers:in:andWhenStateIsUpdatedDo:" : "ArielFavioCarrizo 11/13/2017 19:08"

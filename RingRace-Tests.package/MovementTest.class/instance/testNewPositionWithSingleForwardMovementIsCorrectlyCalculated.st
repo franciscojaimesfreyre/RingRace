@@ -1,14 +1,12 @@
 tests
 testNewPositionWithSingleForwardMovementIsCorrectlyCalculated
-	|board movement oldPosition newPosition1 newPosition2 |
-	
-	board := Board
-				withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new).
+	| board movement oldPosition firstChangedPosition secondChangedPosition |
+	board := Board withSquareEffects: (OrderedCollection new: 30 withAll: NoSquareEffect new).
 	movement := SingleForwardMovement new.
 	oldPosition := PositionInGame positionedInSquare: 1 withLaps: 1.
-	newPosition1 := movement newPositionInGameFrom: oldPosition withBoard: board.
-	self assert: newPosition1 squareNumber equals: 2.
-	self assert: newPosition1 laps equals: 1.
-	newPosition2 := movement newPositionInGameFrom: newPosition1 withBoard: board.
-	self assert: newPosition2 squareNumber equals: 3.
-	self assert: newPosition2 laps equals: 1.
+	firstChangedPosition := movement newPositionInGameFrom: oldPosition withBoard: board.
+	self assert: firstChangedPosition squareNumber equals: 2.
+	self assert: firstChangedPosition laps equals: 1.
+	secondChangedPosition := movement newPositionInGameFrom: firstChangedPosition withBoard: board.
+	self assert: secondChangedPosition squareNumber equals: 3.
+	self assert: secondChangedPosition laps equals: 1
