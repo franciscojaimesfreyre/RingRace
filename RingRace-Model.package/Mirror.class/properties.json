@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "SquareEffect",
+	"super" : "Object",
 	"category" : "RingRace-Model-Board",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"squaresToMove",
-		"targetPlayers"
+		"squareEffect"
 	],
-	"name" : "MoonwalkSquareEffect",
+	"name" : "Mirror",
 	"type" : "normal"
 }

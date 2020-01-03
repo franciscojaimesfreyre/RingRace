@@ -16,7 +16,7 @@ testWhenApplyingADeshacerCardItUndoesTheMoonwalkSquareEffect
 					NoSquareEffect new.
 					NoSquareEffect new.
 					NoSquareEffect new.
-					(MoonwalkSquareEffect newWithSquaresToMove: 2)})
+					(MoonwalkSquareEffect newWithSquaresToMove: 2 )})
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(4 2 2)))}
 		winningWhen: (ReachedNumberOfLaps reaching: 2).
 	deshacerCard := InstantaneousCard withEffect: DeshacerEffect new.

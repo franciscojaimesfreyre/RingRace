@@ -1,7 +1,0 @@
-{
-	"instance" : {
-		"testWhenCreatingAPlayerStateWithNewPositionInGameItHasTheSamePositionInGame" : "ArielFavioCarrizo 11/12/2017 21:47",
-		"testWhenCreatingAPlayerStateItHasTheSamePositionInGame" : "ArielFavioCarrizo 11/12/2017 21:47"
-	},
-	"class" : { }
-}

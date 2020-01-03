@@ -6,3 +6,4 @@ withLastSquareEffect: aLastSquareEffect
 		withActivatedPermanentCards: activatedPermanentCards
 		withLastSquareEffect: aLastSquareEffect
 		withUndoLastEffectBlock: undoLastEffectBlock
+		withBoard: board

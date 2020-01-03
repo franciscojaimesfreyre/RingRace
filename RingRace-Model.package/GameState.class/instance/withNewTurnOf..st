@@ -6,3 +6,4 @@ withNewTurnOf: aPlayer
 		withActivatedPermanentCards: activatedPermanentCards
 		withLastSquareEffect: lastSquareEffect
 		withUndoLastEffectBlock: undoLastEffectBlock
+		withBoard: board 

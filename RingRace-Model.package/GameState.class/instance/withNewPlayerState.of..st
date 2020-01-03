@@ -9,3 +9,4 @@ withNewPlayerState: aPlayerState of: aPlayer
 		withActivatedPermanentCards: activatedPermanentCards
 		withLastSquareEffect: lastSquareEffect 
 		withUndoLastEffectBlock: undoLastEffectBlock
+		withBoard: board

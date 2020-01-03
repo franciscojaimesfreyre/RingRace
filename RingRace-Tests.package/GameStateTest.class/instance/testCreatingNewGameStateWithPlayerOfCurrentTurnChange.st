@@ -1,9 +1,10 @@
 tests
 testCreatingNewGameStateWithPlayerOfCurrentTurnChange
-	|aGameState1 aGameState2 nico claudio |
+	|aGameState1 aGameState2 nico claudio board|
+	board := Board withSquareEffects: (OrderedCollection new: 10 withAll: NoSquareEffect new).
 	nico := Player named: 'Nico'.
 	claudio := Player named: 'claudio'.
-	aGameState1 := GameState withPlayers: { nico. claudio }.
+	aGameState1 := GameState withPlayers: { nico. claudio } andABoard: board.
 	
 	self assert: (aGameState1 stateOf: nico ) positionInGame squareNumber equals: 1.
 	self assert: (aGameState1 stateOf: nico ) positionInGame laps equals: 0.

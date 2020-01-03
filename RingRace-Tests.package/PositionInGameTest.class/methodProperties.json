@@ -1,8 +1,0 @@
-{
-	"instance" : {
-		"testWhenCreatingAPositionInGameWithNewPositionInBoard" : "fjf 11/14/2017 20:50",
-		"testWhenCreatingAPositionInGameItHasTheSamePositionAndTheSameLaps" : "fjf 11/14/2017 20:50",
-		"testWhenCreatingAPositionInGameWithNewNumberOfLaps" : "fjf 11/14/2017 20:50"
-	},
-	"class" : { }
-}

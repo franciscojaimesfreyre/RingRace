@@ -6,4 +6,4 @@ applyTo: aPlayer in: aGameStateContext
 	
 	aGameStateContext newState: 
 			( ( gameState withTransformedPlayerStates: [ :eachPlayerState | eachPlayerState withNewPositionInGame: (PositionInGame positionedInSquare: 1 withLaps: 0) ]
-				of: gameState players) withUndoLastEffectBlock: undoEffectBlock ).
+				of: gameState players ) withUndoLastEffectBlock: undoEffectBlock ).

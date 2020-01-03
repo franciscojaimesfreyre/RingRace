@@ -11,7 +11,7 @@ testWhenFallingIntoMoonwalkEffectInFirstTurnPlayersGetNegativeLaps
 			(Board
 				withSquareEffects:
 					{NoSquareEffect new.
-					(MoonwalkSquareEffect newWithSquaresToMove: 2).
+					(MoonwalkSquareEffect newWithSquaresToMove: 2 ).
 					NoSquareEffect new})
 		withDices: {(Dice withNumbersFrom: (ReadStream on: #(1)))}
 		winningWhen: (ReachedNumberOfLaps reaching: 2).

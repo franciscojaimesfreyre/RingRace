@@ -1,3 +1,3 @@
 accessing
 board
-	^gameStateContext board.
+	^gameStateContext currentState board.
